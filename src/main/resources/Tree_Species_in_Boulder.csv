@@ -1,333 +1,333 @@
-TREEID,COMMONNAME,LATINNAME,SPECIES,SPECIESCODE,SPECIESNAME,GENUS,GENUSENGLISH,LEAFCYCLE,LEAFTYPE,MATHEIGHT,MATWIDTH,FORM,FALLCOLOR,FLOWER,FRUIT,WATERNEED
-1,White fir,Abies concolor,concolor,ABCO,"Fir, White",Abies,fir,Evergreen,Needleleaved,40-70,,,,,,medium
-2,Subalpine fir,Abies lasiocarpa,lasiocarpa,ABLA,"Fir, Subalpine",Abies,fir,Evergreen,Needleleaved,,,,,,,
-3,fir unknown species,Abies spp,spp,AB,Fir unknown species,Abies,fir,Evergreen,Needleleaved,,,,,,,
-4,Hedge maple,Acer campestre,campestre,ACCA,"Maple, Hedge",Acer,maple,Deciduous,Broadleaved,25-35,25-35,oval ,yellow,,samara,low to medium
-5,Amur maple,Acer ginnala,ginnala,ACGI,"Maple, Amur",Acer,maple,Deciduous,Broadleaved,,,,,,,
-6,Rocky Mountain maple,Acer glabrum,glabrum,ACGL,"Maple, Rocky Mountain",Acer,maple,Deciduous,Broadleaved,20-25,10-15,rounded ,"orange, red",,samara,medium to high
-7,Bigtooth maple,Acer grandidentatum,grandidentatum,ACGR3,"Maple, Bigtooth",Acer,maple,Deciduous,Broadleaved,20-25,15-25,rounded,"orange, yellow",,samara,low to medium
-8,Paperbark maple,Acer griseum,griseum,ACGR,"Maple, Paperbark",Acer,maple,Deciduous,Broadleaved,,,,,,,
-9,Boxelder,Acer negundo,negundo,ACNE,Boxelder,Acer,maple,Deciduous,Broadleaved,30-50,30-50,rounded,yellow,,seedless,low to medium
-10,Variegated boxelder,Acer negundo,negundo,ACNE,"Boxelder, Variegated",Acer,maple,Deciduous,Broadleaved,,,,,,,
-11,Black maple,Acer nigrum,nigrum,ACNI,"Maple, Black",Acer,maple,Deciduous,Broadleaved,,,,,,,
-12,Japanese maple,Acer palmatum,palmatum,ACPA,"Maple, Japanese",Acer,maple,Deciduous,Broadleaved,,,,,,,
-13,Norway maple,Acer platanoides,platanoides,ACPL,"Maple, Norway",Acer,maple,Deciduous,Broadleaved,,,,,,,
-14,Sycamore maple,Acer pseudoplatanus,pseudoplatanus,ACPS,"Maple, Sycamore",Acer,maple,Deciduous,Broadleaved,,,,,,,
-15,Red maple,Acer rubrum,rubrum,ACRU,"Maple, Red",Acer,maple,Deciduous,Broadleaved,,,,,,,
-16,Silver maple,Acer saccharinum,saccharinum,ACSA1,"Maple, Silver",Acer,maple,Deciduous,Broadleaved,,,,,,,
-17,Sugar maple,Acer saccharum,saccharum,ACSA2,"Maple, Sugar",Acer,maple,Deciduous,Broadleaved,40-80,30-60,rounded,orange,,samara,medium
-18,maple unknown species,Acer spp,spp,AC,Maple unknown species,Acer,maple,Deciduous,Broadleaved,,,,,,,
-19,Tatarian maple,Acer tataricum,tataricum,ACTA,"Maple, Tatarian",Acer,maple,Deciduous,Broadleaved,20-25,15-20,rounded ,"red, yellow",white clusters,samara,low to medium
-20,Freeman maple,Acer x freemanii,x freemanii,ACFR,"Maple, Freeman",Acer,maple,Deciduous,Broadleaved,,,,,,,
-21,Autumn Blaze maple,Acer x freemanii,x freemanii,ACFRJE,"Maple, Freeman Autumn Blaze",Acer,maple,Deciduous,Broadleaved,,,,,,,
-22,Yellow buckeye,Aesculus flava,flava,AEFL,"Buckeye, Yellow",Aesculus,buckeye,Deciduous,Broadleaved,50-75,30-50,rounded,,yellow clusters,nut,medium
-23,Ohio buckeye,Aesculus glabra,glabra,AEGL,"Buckeye, Ohio",Aesculus,buckeye,Deciduous,Broadleaved,20-40,20-40,rounded,"red, orange",white clusters,nut,medium
-24,Common horsechestnut,Aesculus hippocastanum,hippocastanum,AEHI,"Horsechestnut, Common",Aesculus,buckeye,Deciduous,Broadleaved,50-75,40-65,rounded,yellow ,pink clusters,nut,medium
-25,Red horsechestnut,Aesculus x carnea,x carnea,AECA,"Horsechestnut, Red",Aesculus,buckeye,Deciduous,Broadleaved,30-40,25-35,rounded,yellow,pink clusters,nut,medium
-26,Tree-of-Heaven,Ailanthus altissima,altissima,AIAL,Tree-of-Heaven,Ailanthus,Tree-of-Heaven,Deciduous,Broadleaved,,,,,,,
-27,Grey alder,Alnus incana,incana,ALIN,"Alder, Grey",Alnus,alder,Deciduous,Broadleaved,,,,,,,
-28,Red alder,Alnus rubra,rubra,ALRU2,"Alder, Red",Alnus,alder,Deciduous,Broadleaved,,,,,,,
-29,alder unknown species,Alnus spp,spp,AL,Alder unknown species,Alnus,alder,Deciduous,Broadleaved,,,,,,,
-30,Shadblow Serviceberry,Amelanchier canadensis,canadensis,AMCA,"Serviceberry, Shadblow",Amelanchier,Serviceberry,Deciduous,Broadleaved,,,,,,,
-31,River birch,Betula nigra,nigra,BENI,"Birch, River",Betula,birch,Deciduous,Broadleaved,,,,,,,
-32,Water birch,Betula occidentalis,occidentalis,BEOC,"Birch, Water",Betula,birch,Deciduous,Broadleaved,,,,,,,
-33,Paper birch,Betula papyrifera,papyrifera,BEPA,"Birch, Paper",Betula,birch,Deciduous,Broadleaved,,,,,,,
-34,European White birch,Betula pendula,pendula,BEPE,"Birch, European White",Betula,birch,Deciduous,Broadleaved,,,,,,,
-35,birch unknown species,Betula spp,spp,BE,Birch unknown species,Betula,birch,Deciduous,Broadleaved,,,,,,,
-36,Incense cedar,Calocedrus decurrens,decurrens,CADE2,Incense Cedar,Calocedrus,Incense cedar,Evergreen,Needleleaved,,,,,,,
-37,Weeping Siberian peashrub,Caragana arborescens,arborescens,CAAR,"Peashrub, Siberian Pendula",Caragana,peashrub,Deciduous,Broadleaved,,,,,,,
-38,Upright European hornbeam,Carpinus betulus,betulus,CABE,"Hornbeam, European Upright Fastigiata",Carpinus,hornbeam,Deciduous,Broadleaved,,,,,,,
-39,hornbeam unknown species,Carpinus spp,spp,CA40,Hornbeam unknown species,Carpinus,hornbeam,Deciduous,Broadleaved,,,,,,,
-40,Shagbark hickory,Carya ovata,ovata,CAOV,"Hickory, Shagbark",Carya,hickory,Deciduous,Broadleaved,,,,,,,
-41,hickory unknown species,Carya spp,spp,CA1,Hickory unknown species,Carya,hickory,Deciduous,Broadleaved,,,,,,,
-42,Southern catalpa,Catalpa bignonioides,bignonioides,CABI,"Catalpa, Southern",Catalpa,catalpa,Deciduous,Broadleaved,,,,,,,
-43,Western catalpa,Catalpa speciosa,speciosa,CASP,"Catalpa, Western",Catalpa,catalpa,Deciduous,Broadleaved,50-70,30-50,"oval, irregular",yellow,"white, orchid-like",bean pod,low to medium
-44,Chinese catalpa,Catalpa ovata,ovata,CAOV3,"Catalpa, Chinese",Catalpa,catalpa,Deciduous,Broadleaved,,,,,,,
-45,Blue Atlas cedar,Cedrus atlantica,atlantica,CEATGL,"Cedar, Blue Atlas Glauca",Cedrus,cedar,Evergreen,Needleleaved,40-60,,,,,,medium
-46,Sugarberry,Celtis laevigata,laevigata,CELA,Sugarberry,Celtis,hackberry,Deciduous,Broadleaved,,,,,,,
-47,Northern hackberry,Celtis occidentalis,occidentalis,CEOC,"Hackberry, Northern",Celtis,hackberry,Deciduous,Broadleaved,40-60,40-60,rounded,yellow,,drupe,low to medium
-48,Netleaf hackberry,Celtis laevigata,laevigata,CELA,"Hackberry, Netleaf Reticulata",Celtis,hackberry,Deciduous,Broadleaved,,,,,,,
-49,hackberry unknown species,Celtis spp,spp,CE2,Hackberry unknown species,Celtis,hackberry,Deciduous,Broadleaved,,,,,,,
-50,Katsura tree,Cercidiphyllum japonicum,japonicum,CEJA,Katsura tree,Cercidiphyllum,Katsura tree,Deciduous,Broadleaved,,,,,,,
-51,Eastern redbud,Cercis canadensis,canadensis,CECA,"Redbud, Eastern",Cercis,redbud,Deciduous,Broadleaved,15-25,20-30,rounded,yellow,pink to purple,seed pod,medium to high
-52,Mountain-mahogany,Cercocarpus spp,spp,CE3,Mountain-mahogany,Cercocarpus,Mountain-mahogany,Deciduous,Broadleaved,,,,,,,
-53,falsecypress unknown species,Chamaecyparis spp,spp,CH,Falsecypress unknown species,Chamaecyparis,falsecypress,Evergreen,Needleleaved,,,,,,,
-54,Yellowwood,Cladrastis kentukea,kentukea,CLLU,Yellowwood,Cladrastis,Yellowwood,Deciduous,Broadleaved,30-50,30-50,rounded,yellow,white clusters,seed pod,medium
-55,Flowering dogwood,Cornus florida,florida,COFL,"Dogwood, Flowering",Cornus,dogwood,Deciduous,Broadleaved,,,,,,,
-56,Cornelian Cherry dogwood,Cornus mas,mas,COMA,"Dogwood, Cornelian Cherry",Cornus,dogwood,Deciduous,Broadleaved,,,,,,,
-57,dogwood unknown species,Cornus spp,spp,CO1,Dogwood unknown species,Cornus,dogwood,Deciduous,Broadleaved,,,,,,,
-58,Turkish filbert,Corylus colurna,colurna,COCO2,"Filbert, Turkish",Corylus,filbert,Deciduous,Broadleaved,40-50,15-35,pyrimidal,bronze,,"nut, edible",low to medium
-59,Smoke tree,Cotinus coggygria,coggygria,COCO1,Smoke tree,Cotinus,Smoke tree,Deciduous,Broadleaved,,,,,,,
-60,Russian hawthorn,Crataegus ambigua,ambigua,CRPH,"Hawthorn, Russian",Crataegus,hawthorn,Deciduous,Broadleaved,15-30,15-20,rounded,"orange, yellow",white,berry,low
-61,Cockspur hawthorn,Crataegus crus-galli,crus-galli,CRCR,"Hawthorn, Cockspur",Crataegus,hawthorn,Deciduous,Broadleaved,20-30,20-35,rounded,orange,white,berry,low to medium
-62,Thornless Cockspur hawthorn,Crataegus crus-galli,crus-galli,CRCRIN,"Hawthorn, Cockspur Thornless",Crataegus,hawthorn,Deciduous,Broadleaved,20-30,20-35,rounded,orange,white,berry,low to medium
-63,Smooth hawthorn,Crataegus laevigata,laevigata,CRLA80,"Hawthorn, Smooth",Crataegus,hawthorn,Deciduous,Broadleaved,20-25,15-20,rounded,yellow,red,berry,medium
-64,Downy hawthorn,Crataegus mollis,mollis,CRMO1,"Hawthorn, Downy",Crataegus,hawthorn,Deciduous,Broadleaved,20-25,20-25,rounded,red,white,berry,low to medium
-65,Oneseed hawthorn,Crataegus monogyna,monogyna,CROX,"Hawthorn, Oneseed",Crataegus,hawthorn,Deciduous,Broadleaved,,,,,,,
-66,Washington hawthorn,Crataegus phaenopyrum,phaenopyrum,CRPH,"Hawthorn, Washington",Crataegus,hawthorn,Deciduous,Broadleaved,,,,,,,
-67,hawthorn unknown species,Crataegus spp,spp,CR,Hawthorn unknown species,Crataegus,hawthorn,Deciduous,Broadleaved,,,,,,,
-68,Arizona cypress,Cupressus arizonica,arizonica,CUAR,"Cypress, Arizona",Cupressus,cypress,Evergreen,Needleleaved,,,,,,,
-69,cypress unknown species,Cupressus spp,spp,CU,Cypress unknown species,Cupressus,cypress,Evergreen,Needleleaved,,,,,,,
-70,Common persimmon,Diospyros virginiana,virginiana,DIVI,"Persimmon, Common",Diospyros,persimmon,Deciduous,Broadleaved,,,,,,,
-71,Russian-olive,Elaeagnus angustifolia,angustifolia,ELAN,Russian-olive,Elaeagnus,Russian-olive,Deciduous,Broadleaved,,,,,,,
-72,spindletree unknown species,Euonymus spp,spp,EUSP,Spindletree unknown species,Euonymus,spindletree,Deciduous,Broadleaved,,,,,,,
-73,American beech,Fagus grandifolia,grandifolia,FAGR,"Beech, American",Fagus,beech,Deciduous,Broadleaved,,,,,,,
-74,beech unknown species,Fagus spp,spp,FA,Beech unknown species,Fagus,beech,Deciduous,Broadleaved,,,,,,,
-75,European beech,Fagus sylvatica,sylvatica,FASY,"Beech, European",Fagus,beech,Deciduous,Broadleaved,,,,,,,
-76,White ash,Fraxinus americana,americana,FRAM,"Ash, White",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-77,Narrow-leafed ash,Fraxinus angustifolia,angustifolia,FRAN2,"Ash, Narrow-leafed",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-78,European ash,Fraxinus excelsior,excelsior,FREX,"Ash, European",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-79,Manchurian ash,Fraxinus mandshurica,mandshurica,FRMA,"Ash, Manchurian",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-80,Black ash,Fraxinus nigra,nigra,FRNI,"Ash, Black",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-81,Green ash,Fraxinus pennsylvanica,pennsylvanica,FRPE,"Ash, Green",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-82,Blue ash,Fraxinus quadrangulata,quadrangulata,FRQU,"Ash, Blue",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-83,ash unknown species,Fraxinus spp,spp,FR,Ash unknown species,Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-84,Modesto Velvet ash,Fraxinus velutina,velutina,FRVEMO,"Ash, Velvet Modesto",Fraxinus,ash,Deciduous,Broadleaved,,,,,,,
-85,Ginkgo,Ginkgo biloba,biloba,GIBI,Ginkgo,Ginkgo,Ginkgo,Deciduous,Broadleaved,,,,,,,
-86,Honeylocust,Gleditsia triacanthos,triacanthos,GLTR,Honeylocust,Gleditsia,honeylocust,Deciduous,Broadleaved,40-50,30-40,rounded,yellow,,bean pod ,medium
-87,Kentucky coffeetree,Gymnocladus dioicus,dioicus,GYDI,"Coffeetree, Kentucky",Gymnocladus,coffeetree,Deciduous,Broadleaved,60-80,40-45,"rounded, irregular",yellow,,bean pod,low to medium
-88,Black walnut,Juglans nigra,nigra,JUNI,"Walnut, Black",Juglans,walnut,Deciduous,Broadleaved,,,,,,,
-89,English walnut,Juglans regia,regia,JURE,"Walnut, English",Juglans,walnut,Deciduous,Broadleaved,,,,,,,
-90,Chinese juniper,Juniperus chinensis,chinensis,JUCH,"Juniper, Chinese",Juniperus,juniper,Evergreen,Needleleaved,,,,,,,
-91,One Seed juniper,Juniperus monosperma,monosperma,JUMO,"Juniper, One Seed",Juniperus,juniper,Evergreen,Needleleaved,,,,,,,
-92,Rocky Mountain juniper,Juniperus scopulorum,scopulorum,JUSC,"Juniper, Rocky Mountain",Juniperus,juniper,Evergreen,Needleleaved,15-30,,,,,,low
-93,juniper unknown species,Juniperus spp,spp,JU,Juniper unknown species,Juniperus,juniper,Evergreen,Needleleaved,,,,,,,
-94,Eastern Red cedar,Juniperus virginiana,virginiana,JUVI,"Cedar, Eastern Red",Juniperus,juniper,Evergreen,Needleleaved,15-30,,,,,,low
-95,Goldenrain tree,Koelreuteria paniculata,paniculata,KOPA,Goldenrain tree,Koelreuteria,Goldenrain tree,Deciduous,Broadleaved,30-40,30-40,"rounded, irregular","orange, yellow",yellow clusters,seed capsule,low
-96,Goldenchain tree,Laburnum x watereri,x watereri,LAWA,Goldenchain tree,Laburnum,Goldenchain tree,Deciduous,Broadleaved,,,,,,,
-97,European larch,Larix decidua,decidua,LADE,"Larch, European",Larix,larch,Deciduous,Broadleaved,,,,,,,
-98,larch unknown species,Larix spp,spp,LA10,Larch unknown species,Larix,larch,Deciduous,Broadleaved,,,,,,,
-99,Sweetgum,Liquidambar styraciflua,styraciflua,LIST,Sweetgum,Liquidambar,Sweetgum,Deciduous,Broadleaved,60-80,40-60,"oval, irregular","orange, purple, red",,seed ball,medium
-100,Tuliptree,Liriodendron tulipifera,tulipifera,LITU,Tuliptree,Liriodendron,Tuliptree,Deciduous,Broadleaved,60-70,30-50,upright,yellow,"yellow, tulip-like",seed capsule,medium
-101,Amur maackia,Maackia amurensis,amurensis,MAAM9,"Maackia, Amur",Maackia,maackia,Deciduous,Broadleaved,20-30,20-30,rounded,yellow,white,seed pod,low to medium
-102,magnolia unknown species,Magnolia spp,spp,MA1,Magnolia unknown species,Magnolia,magnolia,Deciduous,Broadleaved,,,,,,,
-103,Star magnolia,Magnolia stellata,stellata,MAST,"Magnolia, Star",Magnolia,magnolia,Deciduous,Broadleaved,,,,,,,
-104,Saucer magnolia,Magnolia x soulangiana,x soulangiana,MASO,"Magnolia, Saucer",Magnolia,magnolia,Deciduous,Broadleaved,20-25,20-25,rounded,bronze,white to purple,seed cluster,medium
-105,Prairie crabapple,Malus ioensis,ioensis,PYIO,"Crabapple, Prairie",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-106,Wild apple,Malus pumila,pumila,MAPU,"Apple, Wild",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-107,apple unknown species,Malus spp,spp,MA2,Apple unknown species,Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-108,crabapple unknown species,Malus spp,spp,MA2,Crabapple unknown species,Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-109,Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering",Malus,apple or crabapple,Deciduous,Broadleaved,10-25,10-20,rounded,yellow,white to pink,pome,low to medium
-110,Chonosuki Flowering crabapple,Malus tschonoskii,tschonoskii,MATS,"Crabapple, Chonosuki",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-111,White mulberry,Morus alba,alba,MOAL,"Mulberry, White",Morus,mulberry,Deciduous,Broadleaved,30-50,30-50,rounded,bronze,,fruitless,medium
-112,Weeping mulberry,Morus alba,alba,MOAL,"Mulberry, White Pendula",Morus,mulberry,Deciduous,Broadleaved,,,,,,,
-113,Red mulberry,Morus rubra,rubra,MORU,"Mulberry, Red",Morus,mulberry,Deciduous,Broadleaved,,,,,,,
-114,mulberry unknown species,Morus spp,spp,MO,Mulberry unknown species,Morus,mulberry,Deciduous,Broadleaved,,,,,,,
-115,Norway spruce,Picea abies,abies,PIAB,"Spruce, Norway",Picea,spruce,Evergreen,Needleleaved,,,,,,,
-116,Engelmann spruce,Picea engelmannii,engelmannii,PIEN,"Spruce, Engelmann",Picea,spruce,Evergreen,Needleleaved,,,,,,,
-117,White spruce,Picea glauca,glauca,PIGL1,"Spruce, White",Picea,spruce,Evergreen,Needleleaved,20-40,,,,,,medium to high
-118,Serbian spruce,Picea omorika,omorika,PIOM,"Spruce, Serbian",Picea,spruce,Evergreen,Needleleaved,,,,,,,
-119,Blue spruce,Picea pungens,pungens,PIPU,"Spruce, Blue",Picea,spruce,Evergreen,Needleleaved,30-60,,,,,,medium to high
-120,spruce unknown species,Picea spp,spp,PI1,Spruce unknown species,Picea,spruce,Evergreen,Needleleaved,,,,,,,
-121,Bristlecone pine,Pinus aristata,aristata,PIAR,"Pine, Bristlecone",Pinus,pine,Evergreen,Needleleaved,8-20,,,,,,low to medium
-122,Lodgepole pine,Pinus contorta,contorta,PICO,"Pine, Lodgepole",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-123,Japanese Umbrella pine,Pinus densiflora,densiflora,PIDE,"Pine, Japanese Red Umbraculifera",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-124,Pinyon pine,Pinus edulis,edulis,PIED,"Pine, Pinyon",Pinus,pine,Evergreen,Needleleaved,20-50,,,,,,low to medium
-125,Afghan pine,Pinus eldarica,eldarica,PIEL2,"Pine, Afghan",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-126,Limber pine,Pinus flexilis,flexilis,PIFL,"Pine, Limber",Pinus,pine,Evergreen,Needleleaved,40-60,,,,,,low to medium
-127,Bosnian pine,Pinus heldreichii,heldreichii,PIHE,"Pine, Bosnian",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-128,Western White pine,Pinus monticola,monticola,PIMO3,"Pine, Western White",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-129,Mugo pine,Pinus mugo,mugo,PIMU,"Pine, Mugo",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-130,Austrian pine,Pinus nigra,nigra,PINI,"Pine, Austrian",Pinus,pine,Evergreen,Needleleaved,20-60,,,,,,medium
-131,Ponderosa pine,Pinus ponderosa,ponderosa,PIPO,"Pine, Ponderosa",Pinus,pine,Evergreen,Needleleaved,60-125,,,,,,low to medium
-132,pine unknown species,Pinus spp,spp,PI2,Pine unknown species,Pinus,pine,Evergreen,Needleleaved,,,,,,,
-133,Southwestern White pine,Pinus strobiformis,strobiformis,PIST2,"Pine, Southwestern White",Pinus,pine,Evergreen,Needleleaved,35-50,,,,,,low to medium
-134,Eastern White pine,Pinus strobus,strobus,PIST,"Pine, Eastern White",Pinus,pine,Evergreen,Needleleaved,50-80,,,,,,medium
-135,Scotch pine,Pinus sylvestris,sylvestris,PISY,"Pine, Scotch",Pinus,pine,Evergreen,Needleleaved,30-60,,,,,,medium
-136,Japanese Black pine,Pinus thunbergiana,thunbergiana,PITH,"Pine, Japanese Black",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-137,Bhutan pine,Pinus wallichiana,wallichiana,PIWA1,"Pine, Bhutan",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-138,American sycamore,Platanus occidentalis,occidentalis,PLOC,"Sycamore, American",Platanus,planetree,Deciduous,Broadleaved,,,,,,,
-139,Oriental planetree,Platanus orientalis,orientalis,PLOR,"Planetree, Oriental",Platanus,planetree,Deciduous,Broadleaved,,,,,,,
-140,London planetree,Platanus x acerifolia,x acerifolia,PLAC1,"Planetree, London",Platanus,planetree,Deciduous,Broadleaved,60-70,30-60,rounded,bronze,,seed ball,medium to high
-141,Oriental arborvitae,Platycladus orientalis,orientalis,THOR,"Arborvitae, Oriental",Platycladus,arborvitae,Evergreen,Needleleaved,,,,,,,
-142,White poplar,Populus alba,alba,POAL,"Poplar, White",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-143,Bolleana poplar,Populus alba,alba,POALPY,"Poplar, White Bolleana Pyramidalis",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-144,Narrowleaf cottonwood,Populus angustifolia,angustifolia,POAN,"Cottonwood, Narrowleaf",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-145,Eastern cottonwood,Populus deltoides,deltoides,PODE,"Cottonwood, Eastern",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-146,Fremont cottonwood,Populus fremontii,fremontii,POFR,"Cottonwood, Fremont",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-147,Lombardy poplar,Populus nigra,nigra,PONI,"Poplar, Lombardy",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-148,Plains cottonwood,Populus deltoides,deltoides,POSA,"Cottonwood, Plains Monilifera",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-149,cottonwood unknown species,Populus spp,spp,PO,Cottonwood unknown species,Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-150,Quaking aspen,Populus tremuloides,tremuloides,POTR1,"Aspen, Quaking",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-151,Lanceleaf cottonwood,Populus x acuminata,x acuminata,POAC5,"Cottonwood, Lanceleaf",Populus,cottonwood,Deciduous,Broadleaved,,,,,,,
-152,mesquite unknown species,Prosopis spp,spp,PR6,Mesquite unknown species,Prosopis,mesquite,Deciduous,Broadleaved,,,,,,,
-153,American plum,Prunus americana,americana,PRAM,"Plum, American",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-154,Apricot,Prunus armeniaca,armeniaca,PRAR,Apricot,Prunus,plum,Deciduous,Broadleaved,,,,,,,
-155,Sweet cherry,Prunus avium,avium,PRAV,"Cherry, Sweet",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-156,Flowering plum,Prunus cerasifera,cerasifera,PRCE,"Plum, Flowering",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-157,European plum,Prunus domestica,domestica,PRDO,"Plum, European",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-158,Peach,Prunus persica,persica,PRPE2,Peach,Prunus,plum,Deciduous,Broadleaved,,,,,,,
-159,Sand cherry,Prunus pumila,pumila,PRPU1,"Cherry, Sand",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-160,Sargent cherry,Prunus sargentii,sargentii,PRSA,"Cherry, Sargent",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-161,Black cherry,Prunus serotina,serotina,PRSE1,"Cherry, Black",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-162,Kwanzan cherry,Prunus serrulata,serrulata,PRSE2,"Cherry, Kwanzan",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-163,plum unknown species,Prunus spp,spp,PR,Plum unknown species,Prunus,plum,Deciduous,Broadleaved,,,,,,,
-164,Chokecherry,Prunus virginiana,virginiana,PRVI,Chokecherry,Prunus,plum,Deciduous,Broadleaved,,,,,,,
-165,Canada Red chokecherry,Prunus virginiana,virginiana,PRVI,"Chokecherry, Canada Red",Prunus,plum,Deciduous,Broadleaved,20-30,10-15,rounded,yellow,white,berry,medium
-166,Yoshino Flowering cherry,Prunus yedoensis,yedoensis,PRYE,"Cherry, Yoshino Flowering",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-167,Douglas-fir,Pseudotsuga menziesii,menziesii,PSME,Douglas-fir,Pseudotsuga,Douglas-fir,Evergreen,Needleleaved,40-80,,,,,,medium
-168,Common hoptree,Ptelea trifoliata,trifoliata,PTTR,"Hoptree, Common",Ptelea,hoptree,Deciduous,Broadleaved,,,,,,,
-169,Flowering pear,Pyrus calleryana,calleryana,PYCA,"Pear, Flowering",Pyrus,pear,Deciduous,Broadleaved,30-40,15-28,oval,red,white,pome,low to medium
-170,Fruiting pear,Pyrus communis,communis,PYCO,"Pear, Fruiting",Pyrus,pear,Deciduous,Broadleaved,,,,,,,
-171,pear unknown species,Pyrus spp,spp,PY,Pear unknown species,Pyrus,pear,Deciduous,Broadleaved,,,,,,,
-172,Ussurian pear,Pyrus ussuriensis,ussuriensis,PYUS,"Pear, Ussurian",Pyrus,pear,Deciduous,Broadleaved,,,,,,,
-173,Sawtooth oak,Quercus acutissima,acutissima,QUAC,"Oak, Sawtooth",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-174,White oak,Quercus alba,alba,QUAL,"Oak, White",Quercus,oak,Deciduous,Broadleaved,50-70,50-70,rounded,red,,acorn,low to medium
-175,Swamp White oak,Quercus bicolor,bicolor,QUBI,"Oak, Swamp White",Quercus,oak,Deciduous,Broadleaved,50-60,50-60,rounded,"bronze, orange",,acorn,medium
-176,Scarlet oak,Quercus coccinea,coccinea,QUCO,"Oak, Scarlet",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-177,Northern Pin oak,Quercus ellipsoidalis,ellipsoidalis,QUEL,"Oak, Northern Pin",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-178,Gambel oak,Quercus gambelii,gambelii,QUGA,"Oak, Gamble",Quercus,oak,Deciduous,Broadleaved,20-25,20-30,"rounded, irregular",bronze,,acorn,low
-179,Shingle oak,Quercus imbricaria,imbricaria,QUIM,"Oak, Shingle",Quercus,oak,Deciduous,Broadleaved,40-50,40-50,oval,"bronze, red",,acorn,medium
-180,Overcup oak,Quercus lyrata,lyrata,QULY,"Oak, Overcup",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-181,Bur oak,Quercus macrocarpa,macrocarpa,QUMA1,"Oak, Bur",Quercus,oak,Deciduous,Broadleaved,60-80,60-80,rounded,bronze,,acorn,low to medium
-182,Chinkapin oak,Quercus muehlenbergii,muehlenbergii,QUMU,"Oak, Chinkapin",Quercus,oak,Deciduous,Broadleaved,40-60,50-60,rounded,bronze,,acorn,low to medium
-183,Pin oak,Quercus palustris,palustris,QUPA,"Oak, Pin",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-184,Willow oak,Quercus phellos,phellos,QUPH,"Oak, Willow",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-185,Chestnut oak,Quercus prinus,prinus,QUPR,"Oak, Chestnut",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-186,English oak,Quercus robur,robur,QURO,"Oak, English",Quercus,oak,Deciduous,Broadleaved,50-70,50-70,rounded,bronze,,acorn,low to medium
-187,Columnar English oak,Quercus robur,robur,QUROFA,"Oak, English Columnar Fastigiata",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-188,Northern Red oak,Quercus rubra,rubra,QURU,"Oak, Northern Red",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-189,Shumard oak,Quercus shumardii,shumardii,QUSH,"Oak, Shumard",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-190,oak unknown species,Quercus spp,spp,QU,Oak unknown species,Quercus,oak,Deciduous,Broadleaved,,,,,,,
-191,Wavy Leaf oak,Quercus undulata,undulata,QUGA,"Oak, Wavy Leaf",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-192,Colorado Foothills oak,Quercus x mazei,x mazei,QUGA,"Oak, Colorado Foothills",Quercus,oak,Deciduous,Broadleaved,,,,,,,
-193,European buckthorn,Rhamnus cathartica,cathartica,RHCA,"Buckthorn, European",Rhamnus,buckthorn,Deciduous,Broadleaved,,,,,,,
-194,buckthorn unknown species,Rhamnus spp,spp,RHSP2,Buckthorn unknown species,Rhamnus,buckthorn,Deciduous,Broadleaved,,,,,,,
-195,sumac unknown species,Rhus spp,spp,RHSP,Sumac unknown species,Rhus,sumac,Deciduous,Broadleaved,,,,,,,
-196,Staghorn sumac,Rhus typhina,typhina,RHTY,"Sumac, Staghorn",Rhus,sumac,Deciduous,Broadleaved,,,,,,,
-197,New Mexico locust,Robinia neomexicana,neomexicana,RONE,"Locust, New Mexico",Robinia,locust,Deciduous,Broadleaved,,,,,,,
-198,Black locust,Robinia pseudoacacia,pseudoacacia,ROPS,"Locust, Black",Robinia,locust,Deciduous,Broadleaved,,,,,,,
-199,White willow,Salix alba,alba,SAAL4,"Willow, White",Salix,willow,Deciduous,Broadleaved,,,,,,,
-200,Peachleaf willow,Salix amygdaloides,amygdaloides,SAAM,"Willow, Peachleaf",Salix,willow,Deciduous,Broadleaved,,,,,,,
-201,Weeping willow,Salix babylonica,babylonica,SABA1,"Willow, Weeping",Salix,willow,Deciduous,Broadleaved,,,,,,,
-202,Pussy willow,Salix discolor,discolor,SADI,"Willow, Pussy",Salix,willow,Deciduous,Broadleaved,,,,,,,
-203,Crack willow,Salix fragilis,fragilis,SAFR,"Willow, Crack",Salix,willow,Deciduous,Broadleaved,,,,,,,
-204,Corkscrew willow,Salix matsudana,matsudana,SAMA,"Willow, Corkscrew",Salix,willow,Deciduous,Broadleaved,,,,,,,
-205,Black willow,Salix nigra,nigra,SANI,"Willow, Black",Salix,willow,Deciduous,Broadleaved,,,,,,,
-206,willow unknown species,Salix spp,spp,SA,Willow unknown species,Salix,willow,Deciduous,Broadleaved,,,,,,,
-207,Giant sequoia,Sequoiadendron giganteum,giganteum,SEGI,"Sequoia, Giant",Sequoiadendron,sequoia,Evergreen,Needleleaved,60-200,,,,,,medium to high
-208,Japanese pagoda tree,Styphnolobium japonicum,japonicum,SOJA,"Pagoda tree, Japanese",Styphnolobium,pagoda tree,Deciduous,Broadleaved,30-50,35-50,rounded,yellow,white,seed pod,medium
-209,European mountain ash,Sorbus aucuparia,aucuparia,SOAU,"Mountain ash, European",Sorbus,mountain ash,Deciduous,Broadleaved,,,,,,,
-210,mountain ash unknown species,Sorbus spp,spp,SO,Mountain ash unknown species,Sorbus,mountain ash,Deciduous,Broadleaved,,,,,,,
-211,Peking lilac tree,Syringa pekinensis,pekinensis,SYRE,"Lilac tree, Peking",Syringa,lilac,Deciduous,Broadleaved,,,,,,,
-212,Japanese lilac tree,Syringa reticulata,reticulata,SYRE,"Lilac tree, Japanese",Syringa,lilac,Deciduous,Broadleaved,20-25,15-20,oval,yellow,white clusters,seed capsule,low to medium
-213,lilac unknown species,Syringa spp,spp,SYSP,Lilac unknown species,Syringa,lilac,Deciduous,Broadleaved,,,,,,,
-214,Baldcypress,Taxodium distichum,distichum,TADI,Baldcypress,Taxodium,Baldcypress,Evergreen,Needleleaved,50-70,,,,,,medium to high
-215,Yew,Taxus baccata,baccata,TABA,Yew,Taxus,yew,Evergreen,Needleleaved,,,,,,,
-216,yew unknown species,Taxus spp,spp,TA,Yew unknown species,Taxus,yew,Evergreen,Needleleaved,,,,,,,
-217,Arborvitae,Thuja occidentalis,occidentalis,THOC,Arborvitae,Thuja,redcedar,Evergreen,Needleleaved,,,,,,,
-218,Western redcedar,Thuja plicata,plicata,THPL,"Redcedar, Western",Thuja,redcedar,Evergreen,Needleleaved,,,,,,,
-219,American linden,Tilia americana,americana,TIAM,"Linden, American",Tilia,linden,Deciduous,Broadleaved,,,,,,,
-220,Littleleaf linden,Tilia cordata,cordata,TICO,"Linden, Littleleaf",Tilia,linden,Deciduous,Broadleaved,,,,,,,
-221,Silver linden,Tilia tomentosa,tomentosa,TITO,"Linden, Silver",Tilia,linden,Deciduous,Broadleaved,,,,,,,
-222,Eastern hemlock,Tsuga canadensis,canadensis,TSCA,"Hemlock, Eastern",Tsuga,hemlock,Evergreen,Needleleaved,,,,,,,
-223,American elm,Ulmus americana,americana,ULAM,"Elm, American",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-224,Augustine elm,Ulmus americana,americana,ULAM,"Elm, American Augustine",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-225,David elm,Ulmus davidiana,davidiana,ULDA,"Elm, David",Ulmus,elm,Deciduous,Broadleaved,40-50,40-50,vase,yellow,,samara,low to medium
-226,Wych elm,Ulmus glabra,glabra,ULGL,"Elm, Wych",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-227,Camperdown elm,Ulmus glabra,glabra,ULGL,"Elm, Wych Camperdown",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-228,Lacebark elm,Ulmus parvifolia,parvifolia,ULPA,"Elm, Lacebark",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-229,English elm,Ulmus procera,procera,ULPR,"Elm, English",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-230,Emerald Sunshine elm,Ulmus propinqua,propinqua,ULAM,"Elm, Emerald Sunshine",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-231,Siberian elm,Ulmus pumila,pumila,ULPU,"Elm, Siberian",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-232,elm unknown species,Ulmus spp,spp,ULS,Elm unknown species,Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-233,Accolade elm,Ulmus x accolade,x accolade,ULAM,"Elm, Accolade",Ulmus,elm,Deciduous,Broadleaved,50-60,25-40,vase,yellow,,samara,medium
-234,Hybrid elm,Ulmus x hybrida,x hybrida,ULAM,"Elm, Hybrid",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-235,viburnum unknown species,Viburnum spp,spp,VISP2,Viburnum unknown species,Viburnum,viburnum,Deciduous,Broadleaved,,,,,,,
-236,Japanese zelkova,Zelkova serrata,serrata,ZESE,"Zelkova, Japanese",Zelkova,zelkova,Deciduous,Broadleaved,,,,,,,
-237,Hot Wings Tatarian maple,Acer tataricum,tataricum,ACTA,"Maple, Tatarian Hot Wings",Acer,maple,Deciduous,Broadleaved,20-25,15-20,rounded,"red, yellow",white clusters,samara,low to medium
-238,catalpa unknown species,Catalpa spp,spp,CA3,Catalpa unknown species,Catalpa,catalpa,Deciduous,Broadleaved,,,,,,,
-239,Thornless honeylocust,Gleditsia triacanthos,triacanthos,GLTR,"Honeylocust, Thornless",Gleditsia,honeylocust,Deciduous,Broadleaved,40-50,30-40,rounded,yellow,,bean pod ,medium
-240,Chanticleer Flowering pear,Pyrus calleryana,calleryana,PYCA,"Pear, Callery Chanticleer",Pyrus,pear,Deciduous,Broadleaved,30-40,15-28,oval,red,white,pome,low to medium
-241,Coralburst Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Coralburst",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-242,Dolgo Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Dolgo",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-243,Prairie Fire Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Prairie Fire",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-244,Radiant Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Radiant",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-245,Spring Snow Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Spring Snow",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-246,Thunderchild Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Thunderchild",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-247,Sensation boxelder,Acer negundo,negundo,ACNE,"Boxelder, Sensation",Acer,maple,Deciduous,Broadleaved,,,,,,,
-248,Shellbark hickory,Carya laciniosa,laciniosa,CALA,"Hickory, Shellbark",Carya,hickory,Deciduous,Broadleaved,,,,,,,
-249,Common whitebeam,Sorbus aria,aria,SOAR,"Whitebeam, Common",Sorbus,mountain ash,Deciduous,Broadleaved,,,,,,,
-250,Valley Forge American elm,Ulmus americana,americana,ULAM,"Elm, American Valley Forge",Ulmus,elm,Deciduous,Broadleaved,,,,,,,
-251,Caddo Sugar maple,Acer saccharum,saccharum,ACSA2,"Maple, Sugar Caddo",Acer,maple,Deciduous,Broadleaved,40-80,30-60,rounded,orange,,samara,medium
-252,Fall Fiesta Sugar maple,Acer saccharum,saccharum,ACSA2,"Maple, Sugar Fall Fiesta",Acer,maple,Deciduous,Broadleaved,40-80,30-60,rounded,orange,,samara,medium
-253,Green Mountain Sugar maple,Acer saccharum,saccharum,ACSA2,"Maple, Sugar Green Mountain",Acer,maple,Deciduous,Broadleaved,40-80,30-60,rounded,orange,,samara,
-254,Legacy Sugar maple,Acer saccharum,saccharum,ACSA2,"Maple, Sugar Legacy ",Acer,maple,Deciduous,Broadleaved,40-80,30-60,rounded,orange,,samara,
-257,Shade Master Thornless honeylocust,Gleditsia triacanthos,triacanthos,GLTR,"Honeylocust, Thornless Shade Master",Gleditsia,honeylocust,Deciduous,Broadleaved,40-50,30-40,rounded,yellow,,seedless,medium
-258,Rocky Mountain Glow Bigtooth maple,Acer grandidentatum,grandidentatum,ACGR3,"Maple, Bigtooth Rocky Mountian Glow",Acer,maple,Deciduous,Broadleaved,20-25,15-25,rounded,"orange, yellow",,samara,low to medium
-259,Bloodgood London planetree,Platanus x acerifolia,x acerifolia,PLAC1,"Planetree, London Bloodgood",Platanus,planetree,Deciduous,Broadleaved,60-70,30-60,rounded,bronze,,seed ball,medium to high
-260,Exclamation London planetree,Platanus x acerifolia,x acerifolia,PLAC1,"Planetree, London Exclamation",Platanus,planetree,Deciduous,Broadleaved,60-70,30-60,rounded,bronze,,seed ball,medium to high
-261,Espresso Kentucky coffeetree,Gymnocladus dioicus,dioicus,GYDI,"Coffeetree, Kentucky Espresso",Gymnocladus,coffeetree,Deciduous,Broadleaved,60-80,40-45,"rounded, irregular",yellow,,bean pod,low to medium
-262,Skyline Thornless honeylocust,Gleditsia triacanthos,triacanthos,GLTR,"Honeylocust, Thornless Skyline",Gleditsia,honeylocust,Deciduous,Broadleaved,40-50,30-40,rounded,yellow,,bean pod ,medium
-263,Pecan,Carya illinoinensis,illinoinensis,CAIL,Pecan,Carya,hickory,Deciduous,Broadleaved,50-70,30-50,oval,yellow,,"nut, edible",medium
-264,White Shield Osage orange,Maclura pomifera,pomifera,MAPO,"Osage orange, White Shield",Maclura,Osage orange,Deciduous,Broadleaved,30-45,20-40,rounded,yellow,,fruitless,low to medium
-265,Cucumber magnolia,Magnolia acuminata,acuminata,MAAC,"Magnolia, Cucumber",Magnolia,magnolia,Deciduous,Broadleaved,40-60,20-35,pyramidal,yellow,white,seed cone,medium
-267,Lacebark pine,Pinus bungeana,bungeana,PI2,"Pine, Lacebark",Pinus,pine,Evergreen,Needleleaved,,,,,,,
-269,Serviceberry unknown species,Amelanchier spp,spp,AM,Serviceberry unknown species,Amelanchier,Serviceberry,Deciduous,Broadleaved,,,,,,,
-270,walnut unknown species,Juglans spp,spp,JU,Walnut unknown species,Juglans,walnut,Deciduous,Broadleaved,,,,,,,
-575,linden unknown species,Tilia spp,spp,TI,Linden unknown species,Tilia,linden,Deciduous,Broadleaved,,,,,,,
-576,Montmorency cherry,Prunus cerasus,cerasus,PR,"Cherry, Flowering Montmorency",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-577,Queen Elizabeth Hedge maple,Acer campestre,campestre,ACCA,"Maple, Hedge Queen Elizabeth",Acer,maple,Deciduous,Broadleaved,,,,,,,
-578,Flame Amur maple,Acer ginnala,ginnala,ACGI,"Maple, Amur Flame",Acer,maple,,,,,,,,,
-579,Highland Park Bigtooth maple,Acer grandidentatum,grandidentatum,ACGR3,"Maple, Bigtooth Highland Park",Acer,maple,,,,,,,,,
-580,Manzano Bigtooth maple,Acer grandidentatum,grandidentatum,ACGR3,"Maple, Bigtooth Manzano",Acer,maple,,,,,,,,,
-581,State Street Miyabe maple,Acer miyabei,miyabei,AC,"Maple, Miyabe State Street",Acer,maple,,,,,,,,,
-582,Cavalier Norway maple,Acer platanoides,platanoides,ACPL,"Maple, Norway Cavalier",Acer,maple,,,,,,,,,
-583,Crimson Sentry Norway maple,Acer platanoides,platanoides,ACPL,"Maple, Norway Crimson Sentry",Acer,maple,,,,,,,,,
-584,Emerald Lustre Norway maple,Acer platanoides,platanoides,ACPL,"Maple, Norway Emerald Lustre",Acer,maple,,,,,,,,,
-585,Schwedler Norway maple,Acer platanoides,platanoides,ACPL,"Maple, Norway Schwedler",Acer,maple,,,,,,,,,
-586,Queen Ann Sweet cherry,Prunus avium,avium,PRAV,"Cherry, Sweet Queen Ann",Prunus,plum,Deciduous,Broadleaved,,,,,,,
-587,Crimson King Norway maple,Acer platanoides,platanoides,ACPL,"Maple, Norway Crimson King",Acer,maple,Deciduous,Broadleaved,,,,,,,
-588,Louisa Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Louisa",Malus,apple or crabapple,Deciduous,Broadleaved,,,,,,,
-589,Emerald Queen Norway maple,Acer platanoides,platanoides,ACPL,"Maple, Norway Emerald Queen",Acer,maple,,,,,,,,,
-590,Northwood Red maple,Acer rubrum,rubrum,ACRU,"Maple, Red Northwood",Acer,maple,,,,,,,,,
-895,Pattern Perfect Tatarian maple,Acer tataricum,tataricum,ACTA,"Maple, Tatarian Pattern Perfect",Acer,maple,,,,,,,,,
-896,Robin Hill Shadblow Serviceberry,Amelanchier canadensis,canadensis,AMCA,"Serviceberry, Shadblow Robin Hill",Amelanchier,Serviceberry,,,,,,,,,
-897,Pendula European hornbeam,Carpinus betulus,betulus,CABE,"Hornbeam, European Pendula",Carpinus,hornbeam,,,,,,,,,
-898,Nana Southern catalpa,Catalpa bignonioides,bignonioides,CABI,"Catalpa, Southern Nana",Catalpa,catalpa,,,,,,,,,
-899,Covey Eastern redbud,Cercis canadensis,canadensis,CECA,"Redbud, Eastern Covey",Cercis,redbud,,,,,,,,,
-900,Summer Tower Eastern redbud,Cercis canadensis,canadensis,CECA,"Redbud, Eastern Summer Tower",Cercis,redbud,,,,,,,,,
-901,June Snow Giant Dogwood,Cornus controversa,controversa,CO1,"Dogwood, Giant June Snow",Cornus,dogwood,,,,,,,,,
-902,Winter King Green hawthorn,Crataegus viridis,virdis,CRVI,"Hawthorn, Green Winter King",Crataegus,hawthorn,,,,,,,,,
-903,Atropunicea European beech,Fagus sylvatica,sylvatica,FASY,"Beech, European Atropunicea",Fagus,beech,,,,,,,,,
-904,Pendula European beech,Fagus sylvatica,sylvatica,FASY,"Beech, European Pendula",Fagus,beech,,,,,,,,,
-905,Hessei European ash,Fraxinus excelsior,excelsior,FREX,"Ash, European Hessei",Fraxinus,ash,,,,,,,,,
-906,Imperial Thornless honeylocust,Gleditsia triacanthos,triacanthos,GLTR,"Honeylocust, Thornless Imperial",Gleditsia,honeylocust,,,,,,,,,
-907,Sunburst Thornless honeylocust,Gleditsia triacanthos,triacanthos,GLTR,"Honeylocust, Thornless Sunburst",Gleditsia,honeylocust,,,,,,,,,
-908,Stately Manor Kentucky coffeetree,Gymnocladus dioicus,dioicus,GYDI,"Coffeetree, Kentucky Stately Manor",Gymnocladus,coffeetree,,,,,,,,,
-909,Spartan Chinese juniper,Juniperus chinensis,chinensis,JUCH,"Juniper, Chinese Spartan",Juniperus,juniper,,,,,,,,,
-910,Adams Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Adams",Malus,apple or crabapple,,,,,,,,,
-911,Golden Raindrops Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Golden Raindrops",Malus,apple or crabapple,,,,,,,,,
-912,Indian Magic Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Indian Magic",Malus,apple or crabapple,,,,,,,,,
-913,Perfect Purple Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Perfect Purple",Malus,apple or crabapple,,,,,,,,,
-914,Royal Raindrops Flowering crabapple,Malus sylvestris,sylvestris,MASY2,"Crabapple, Flowering Royal Raindrops",Malus,apple or crabapple,,,,,,,,,
-915,Bird's Nest Norway spruce,Picea abies,abies,PIAB,"Spruce, Norway Bird's Nest",Picea,spruce,,,,,,,,,
-916,Pendula Norway spruce,Picea abies,abies,PIAB,"Spruce, Norway Pendula",Picea,spruce,,,,,,,,,
-917,Dwarf Alberta White spruce,Picea glauca,glauca,PIGL1,"Spruce, White Dwarf Alberta",Picea,spruce,,,,,,,,,
-918,Baleri Blue spruce,Picea pungens,pungens,PIPU,"Spruce, Blue Bakeri",Picea,spruce,,,,,,,,,
-919,Fastigiata Blue spruce,Picea pungens,pungens,PIPU,"Spruce, Blue Fastigiata",Picea,spruce,,,,,,,,,
-920,Globosa Blue spruce,Picea pungens,pungens,PIPU,"Spruce, Blue Globosa",Picea,spruce,,,,,,,,,
-921,Hoopsi Blue spruce,Picea pungens,pungens,PIPU,"Spruce, Blue Hoopsi",Picea,spruce,,,,,,,,,
-922,Pendula Blue spruce,Picea pungens,pungens,PIPU,"Spruce, Blue Pendula",Picea,spruce,,,,,,,,,
-923,Taylor's Sunburst Lodgepole pine,Pinus contorta,contorta,PICO,"Pine, Lodgepole Taylor's Sunburst",Pinus,pine,,,,,,,,,
-924,Glauca Scotch pine,Pinus sylvestris,sylvestris,PISY,"Pine, Scotch Glauca",Pinus,pine,,,,,,,,,
-925,Erecta European Aspen,Populus tremula,tremula,PO,"Aspen, European Erecta",Populus,cottonwood,,,,,,,,,
-926,Newport Flowering plum,Prunus cerasifera,cerasifera,PRCE,"Plum, Flowering Newport",Prunus,plum,,,,,,,,,
-927,North Star Sour cherry,Prunus cerasus,cerasus,PR,"Cherry, Sour North Star",Prunus,plum,,,,,,,,,
-928,Manchurian plum,Prunus maackii,maackii,"PRMA
-PRMA","Cherry, Manchurian",Prunus,plum,,,,,,,,,
-929,Princess Kay Canada plum,Prunus nigra,nigra,PR,"Plum, Canada Princess Kay",Prunus,plum,,,,,,,,,
-930,Autumn Blaze Flowering pear,Pyrus calleryana,calleryana,PYCA,"Pear, Callery Autumn Blaze",Pyrus,pear,,,,,,,,,
-931,Redspire Flowering pear,Pyrus calleryana,calleryana,PYCA,"Pear, Callery Redspire",Pyrus,pear,,,,,,,,,
-933,Regent Japanese pagoda tree,Styphnolobium japonicum,japonicum,SOJA,"Pagoda tree, Japanese Regent",Styphnolobium,pagoda tree,,,,,,,,,
-934,Green Giant Western redcedar,Thuja plicata,plicata,THPL,"Redcedar, Western Green Giant",Thuja,redcedar,,,,,,,,,
-935,American Sentry American linden,Tilia americana,americana,TIAM,"Linden, American Sentry",Tilia,linden,,,,,,,,,
-936,Redmond American linden,Tilia americana,americana,TIAM,"Linden, American Redmond",Tilia,linden,,,,,,,,,
-937,Corinthian Littleleaf linden,Tilia cordata,cordata,TICO,"Linden, Littleleaf Corinthian",Tilia,linden,,,,,,,,,
-938,Greenspire Littleleaf linden,Tilia cordata,cordata,TICOG,"Linden, Littleleaf Greenspire",Tilia,linden,,,,,,,,,
-939,Sterling Silver linden,Tilia tomentosa,tomentosa,TITO,"Linden, Silver Sterling Silver",Tilia,linden,,,,,,,,,
-940,Choice City David elm,Ulmus davidiana,davidiana,ULDA,"Elm, David Choice City",Ulmus,elm,,,,,,,,,
-941,Allee Lacebark elm,Ulmus parvifolia,parvifolia,ULPA,"Elm, Lacebark Allee",Ulmus,elm,,,,,,,,,
-942,Frontier Hybrid elm,Ulmus x hybrida,x hybrida,ULAM,"Elm, Hybrid Frontier",Ulmus,elm,,,,,,,,,
-943,Wilsoniana Prospector Hybrid elm,Ulmus x hybrida,x hybrida,ULAM,"Elm, Hybrid Wilsoniana Prospector",Ulmus,elm,,,,,,,,,
-944,Triumph Hybrid elm,Ulmus x hybrida,x hybrida,ULAM,"Elm, Hybrid Triumph",Ulmus,elm,,,,,,,,,
+TREEID;COMMONNAME;LATINNAME;SPECIES;SPECIESCODE;SPECIESNAME;GENUS;GENUSENGLISH;LEAFCYCLE;LEAFTYPE;MATHEIGHT;MATWIDTH;FORM;FALLCOLOR;FLOWER;FRUIT;WATERNEED
+1;White fir;Abies concolor;concolor;ABCO;Fir, White;Abies;fir;Evergreen;Needleleaved;40-70;;;;;;medium
+2;Subalpine fir;Abies lasiocarpa;lasiocarpa;ABLA;Fir, Subalpine;Abies;fir;Evergreen;Needleleaved;;;;;;;
+3;fir unknown species;Abies spp;spp;AB;Fir unknown species;Abies;fir;Evergreen;Needleleaved;;;;;;;
+4;Hedge maple;Acer campestre;campestre;ACCA;Maple, Hedge;Acer;maple;Deciduous;Broadleaved;25-35;25-35;oval ;yellow;;samara;low to medium
+5;Amur maple;Acer ginnala;ginnala;ACGI;Maple, Amur;Acer;maple;Deciduous;Broadleaved;;;;;;;
+6;Rocky Mountain maple;Acer glabrum;glabrum;ACGL;Maple, Rocky Mountain;Acer;maple;Deciduous;Broadleaved;20-25;10-15;rounded ;orange, red;;samara;medium to high
+7;Bigtooth maple;Acer grandidentatum;grandidentatum;ACGR3;Maple, Bigtooth;Acer;maple;Deciduous;Broadleaved;20-25;15-25;rounded;orange, yellow;;samara;low to medium
+8;Paperbark maple;Acer griseum;griseum;ACGR;Maple, Paperbark;Acer;maple;Deciduous;Broadleaved;;;;;;;
+9;Boxelder;Acer negundo;negundo;ACNE;Boxelder;Acer;maple;Deciduous;Broadleaved;30-50;30-50;rounded;yellow;;seedless;low to medium
+10;Variegated boxelder;Acer negundo;negundo;ACNE;Boxelder, Variegated;Acer;maple;Deciduous;Broadleaved;;;;;;;
+11;Black maple;Acer nigrum;nigrum;ACNI;Maple, Black;Acer;maple;Deciduous;Broadleaved;;;;;;;
+12;Japanese maple;Acer palmatum;palmatum;ACPA;Maple, Japanese;Acer;maple;Deciduous;Broadleaved;;;;;;;
+13;Norway maple;Acer platanoides;platanoides;ACPL;Maple, Norway;Acer;maple;Deciduous;Broadleaved;;;;;;;
+14;Sycamore maple;Acer pseudoplatanus;pseudoplatanus;ACPS;Maple, Sycamore;Acer;maple;Deciduous;Broadleaved;;;;;;;
+15;Red maple;Acer rubrum;rubrum;ACRU;Maple, Red;Acer;maple;Deciduous;Broadleaved;;;;;;;
+16;Silver maple;Acer saccharinum;saccharinum;ACSA1;Maple, Silver;Acer;maple;Deciduous;Broadleaved;;;;;;;
+17;Sugar maple;Acer saccharum;saccharum;ACSA2;Maple, Sugar;Acer;maple;Deciduous;Broadleaved;40-80;30-60;rounded;orange;;samara;medium
+18;maple unknown species;Acer spp;spp;AC;Maple unknown species;Acer;maple;Deciduous;Broadleaved;;;;;;;
+19;Tatarian maple;Acer tataricum;tataricum;ACTA;Maple, Tatarian;Acer;maple;Deciduous;Broadleaved;20-25;15-20;rounded ;red, yellow;white clusters;samara;low to medium
+20;Freeman maple;Acer x freemanii;x freemanii;ACFR;Maple, Freeman;Acer;maple;Deciduous;Broadleaved;;;;;;;
+21;Autumn Blaze maple;Acer x freemanii;x freemanii;ACFRJE;Maple, Freeman Autumn Blaze;Acer;maple;Deciduous;Broadleaved;;;;;;;
+22;Yellow buckeye;Aesculus flava;flava;AEFL;Buckeye, Yellow;Aesculus;buckeye;Deciduous;Broadleaved;50-75;30-50;rounded;;yellow clusters;nut;medium
+23;Ohio buckeye;Aesculus glabra;glabra;AEGL;Buckeye, Ohio;Aesculus;buckeye;Deciduous;Broadleaved;20-40;20-40;rounded;red, orange;white clusters;nut;medium
+24;Common horsechestnut;Aesculus hippocastanum;hippocastanum;AEHI;Horsechestnut, Common;Aesculus;buckeye;Deciduous;Broadleaved;50-75;40-65;rounded;yellow ;pink clusters;nut;medium
+25;Red horsechestnut;Aesculus x carnea;x carnea;AECA;Horsechestnut, Red;Aesculus;buckeye;Deciduous;Broadleaved;30-40;25-35;rounded;yellow;pink clusters;nut;medium
+26;Tree-of-Heaven;Ailanthus altissima;altissima;AIAL;Tree-of-Heaven;Ailanthus;Tree-of-Heaven;Deciduous;Broadleaved;;;;;;;
+27;Grey alder;Alnus incana;incana;ALIN;Alder, Grey;Alnus;alder;Deciduous;Broadleaved;;;;;;;
+28;Red alder;Alnus rubra;rubra;ALRU2;Alder, Red;Alnus;alder;Deciduous;Broadleaved;;;;;;;
+29;alder unknown species;Alnus spp;spp;AL;Alder unknown species;Alnus;alder;Deciduous;Broadleaved;;;;;;;
+30;Shadblow Serviceberry;Amelanchier canadensis;canadensis;AMCA;Serviceberry, Shadblow;Amelanchier;Serviceberry;Deciduous;Broadleaved;;;;;;;
+31;River birch;Betula nigra;nigra;BENI;Birch, River;Betula;birch;Deciduous;Broadleaved;;;;;;;
+32;Water birch;Betula occidentalis;occidentalis;BEOC;Birch, Water;Betula;birch;Deciduous;Broadleaved;;;;;;;
+33;Paper birch;Betula papyrifera;papyrifera;BEPA;Birch, Paper;Betula;birch;Deciduous;Broadleaved;;;;;;;
+34;European White birch;Betula pendula;pendula;BEPE;Birch, European White;Betula;birch;Deciduous;Broadleaved;;;;;;;
+35;birch unknown species;Betula spp;spp;BE;Birch unknown species;Betula;birch;Deciduous;Broadleaved;;;;;;;
+36;Incense cedar;Calocedrus decurrens;decurrens;CADE2;Incense Cedar;Calocedrus;Incense cedar;Evergreen;Needleleaved;;;;;;;
+37;Weeping Siberian peashrub;Caragana arborescens;arborescens;CAAR;Peashrub, Siberian Pendula;Caragana;peashrub;Deciduous;Broadleaved;;;;;;;
+38;Upright European hornbeam;Carpinus betulus;betulus;CABE;Hornbeam, European Upright Fastigiata;Carpinus;hornbeam;Deciduous;Broadleaved;;;;;;;
+39;hornbeam unknown species;Carpinus spp;spp;CA40;Hornbeam unknown species;Carpinus;hornbeam;Deciduous;Broadleaved;;;;;;;
+40;Shagbark hickory;Carya ovata;ovata;CAOV;Hickory, Shagbark;Carya;hickory;Deciduous;Broadleaved;;;;;;;
+41;hickory unknown species;Carya spp;spp;CA1;Hickory unknown species;Carya;hickory;Deciduous;Broadleaved;;;;;;;
+42;Southern catalpa;Catalpa bignonioides;bignonioides;CABI;Catalpa, Southern;Catalpa;catalpa;Deciduous;Broadleaved;;;;;;;
+43;Western catalpa;Catalpa speciosa;speciosa;CASP;Catalpa, Western;Catalpa;catalpa;Deciduous;Broadleaved;50-70;30-50;oval, irregular;yellow;white, orchid-like;bean pod;low to medium
+44;Chinese catalpa;Catalpa ovata;ovata;CAOV3;Catalpa, Chinese;Catalpa;catalpa;Deciduous;Broadleaved;;;;;;;
+45;Blue Atlas cedar;Cedrus atlantica;atlantica;CEATGL;Cedar, Blue Atlas Glauca;Cedrus;cedar;Evergreen;Needleleaved;40-60;;;;;;medium
+46;Sugarberry;Celtis laevigata;laevigata;CELA;Sugarberry;Celtis;hackberry;Deciduous;Broadleaved;;;;;;;
+47;Northern hackberry;Celtis occidentalis;occidentalis;CEOC;Hackberry, Northern;Celtis;hackberry;Deciduous;Broadleaved;40-60;40-60;rounded;yellow;;drupe;low to medium
+48;Netleaf hackberry;Celtis laevigata;laevigata;CELA;Hackberry, Netleaf Reticulata;Celtis;hackberry;Deciduous;Broadleaved;;;;;;;
+49;hackberry unknown species;Celtis spp;spp;CE2;Hackberry unknown species;Celtis;hackberry;Deciduous;Broadleaved;;;;;;;
+50;Katsura tree;Cercidiphyllum japonicum;japonicum;CEJA;Katsura tree;Cercidiphyllum;Katsura tree;Deciduous;Broadleaved;;;;;;;
+51;Eastern redbud;Cercis canadensis;canadensis;CECA;Redbud, Eastern;Cercis;redbud;Deciduous;Broadleaved;15-25;20-30;rounded;yellow;pink to purple;seed pod;medium to high
+52;Mountain-mahogany;Cercocarpus spp;spp;CE3;Mountain-mahogany;Cercocarpus;Mountain-mahogany;Deciduous;Broadleaved;;;;;;;
+53;falsecypress unknown species;Chamaecyparis spp;spp;CH;Falsecypress unknown species;Chamaecyparis;falsecypress;Evergreen;Needleleaved;;;;;;;
+54;Yellowwood;Cladrastis kentukea;kentukea;CLLU;Yellowwood;Cladrastis;Yellowwood;Deciduous;Broadleaved;30-50;30-50;rounded;yellow;white clusters;seed pod;medium
+55;Flowering dogwood;Cornus florida;florida;COFL;Dogwood, Flowering;Cornus;dogwood;Deciduous;Broadleaved;;;;;;;
+56;Cornelian Cherry dogwood;Cornus mas;mas;COMA;Dogwood, Cornelian Cherry;Cornus;dogwood;Deciduous;Broadleaved;;;;;;;
+57;dogwood unknown species;Cornus spp;spp;CO1;Dogwood unknown species;Cornus;dogwood;Deciduous;Broadleaved;;;;;;;
+58;Turkish filbert;Corylus colurna;colurna;COCO2;Filbert, Turkish;Corylus;filbert;Deciduous;Broadleaved;40-50;15-35;pyrimidal;bronze;;nut, edible;low to medium
+59;Smoke tree;Cotinus coggygria;coggygria;COCO1;Smoke tree;Cotinus;Smoke tree;Deciduous;Broadleaved;;;;;;;
+60;Russian hawthorn;Crataegus ambigua;ambigua;CRPH;Hawthorn, Russian;Crataegus;hawthorn;Deciduous;Broadleaved;15-30;15-20;rounded;orange, yellow;white;berry;low
+61;Cockspur hawthorn;Crataegus crus-galli;crus-galli;CRCR;Hawthorn, Cockspur;Crataegus;hawthorn;Deciduous;Broadleaved;20-30;20-35;rounded;orange;white;berry;low to medium
+62;Thornless Cockspur hawthorn;Crataegus crus-galli;crus-galli;CRCRIN;Hawthorn, Cockspur Thornless;Crataegus;hawthorn;Deciduous;Broadleaved;20-30;20-35;rounded;orange;white;berry;low to medium
+63;Smooth hawthorn;Crataegus laevigata;laevigata;CRLA80;Hawthorn, Smooth;Crataegus;hawthorn;Deciduous;Broadleaved;20-25;15-20;rounded;yellow;red;berry;medium
+64;Downy hawthorn;Crataegus mollis;mollis;CRMO1;Hawthorn, Downy;Crataegus;hawthorn;Deciduous;Broadleaved;20-25;20-25;rounded;red;white;berry;low to medium
+65;Oneseed hawthorn;Crataegus monogyna;monogyna;CROX;Hawthorn, Oneseed;Crataegus;hawthorn;Deciduous;Broadleaved;;;;;;;
+66;Washington hawthorn;Crataegus phaenopyrum;phaenopyrum;CRPH;Hawthorn, Washington;Crataegus;hawthorn;Deciduous;Broadleaved;;;;;;;
+67;hawthorn unknown species;Crataegus spp;spp;CR;Hawthorn unknown species;Crataegus;hawthorn;Deciduous;Broadleaved;;;;;;;
+68;Arizona cypress;Cupressus arizonica;arizonica;CUAR;Cypress, Arizona;Cupressus;cypress;Evergreen;Needleleaved;;;;;;;
+69;cypress unknown species;Cupressus spp;spp;CU;Cypress unknown species;Cupressus;cypress;Evergreen;Needleleaved;;;;;;;
+70;Common persimmon;Diospyros virginiana;virginiana;DIVI;Persimmon, Common;Diospyros;persimmon;Deciduous;Broadleaved;;;;;;;
+71;Russian-olive;Elaeagnus angustifolia;angustifolia;ELAN;Russian-olive;Elaeagnus;Russian-olive;Deciduous;Broadleaved;;;;;;;
+72;spindletree unknown species;Euonymus spp;spp;EUSP;Spindletree unknown species;Euonymus;spindletree;Deciduous;Broadleaved;;;;;;;
+73;American beech;Fagus grandifolia;grandifolia;FAGR;Beech, American;Fagus;beech;Deciduous;Broadleaved;;;;;;;
+74;beech unknown species;Fagus spp;spp;FA;Beech unknown species;Fagus;beech;Deciduous;Broadleaved;;;;;;;
+75;European beech;Fagus sylvatica;sylvatica;FASY;Beech, European;Fagus;beech;Deciduous;Broadleaved;;;;;;;
+76;White ash;Fraxinus americana;americana;FRAM;Ash, White;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+77;Narrow-leafed ash;Fraxinus angustifolia;angustifolia;FRAN2;Ash, Narrow-leafed;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+78;European ash;Fraxinus excelsior;excelsior;FREX;Ash, European;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+79;Manchurian ash;Fraxinus mandshurica;mandshurica;FRMA;Ash, Manchurian;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+80;Black ash;Fraxinus nigra;nigra;FRNI;Ash, Black;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+81;Green ash;Fraxinus pennsylvanica;pennsylvanica;FRPE;Ash, Green;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+82;Blue ash;Fraxinus quadrangulata;quadrangulata;FRQU;Ash, Blue;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+83;ash unknown species;Fraxinus spp;spp;FR;Ash unknown species;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+84;Modesto Velvet ash;Fraxinus velutina;velutina;FRVEMO;Ash, Velvet Modesto;Fraxinus;ash;Deciduous;Broadleaved;;;;;;;
+85;Ginkgo;Ginkgo biloba;biloba;GIBI;Ginkgo;Ginkgo;Ginkgo;Deciduous;Broadleaved;;;;;;;
+86;Honeylocust;Gleditsia triacanthos;triacanthos;GLTR;Honeylocust;Gleditsia;honeylocust;Deciduous;Broadleaved;40-50;30-40;rounded;yellow;;bean pod ;medium
+87;Kentucky coffeetree;Gymnocladus dioicus;dioicus;GYDI;Coffeetree, Kentucky;Gymnocladus;coffeetree;Deciduous;Broadleaved;60-80;40-45;rounded, irregular;yellow;;bean pod;low to medium
+88;Black walnut;Juglans nigra;nigra;JUNI;Walnut, Black;Juglans;walnut;Deciduous;Broadleaved;;;;;;;
+89;English walnut;Juglans regia;regia;JURE;Walnut, English;Juglans;walnut;Deciduous;Broadleaved;;;;;;;
+90;Chinese juniper;Juniperus chinensis;chinensis;JUCH;Juniper, Chinese;Juniperus;juniper;Evergreen;Needleleaved;;;;;;;
+91;One Seed juniper;Juniperus monosperma;monosperma;JUMO;Juniper, One Seed;Juniperus;juniper;Evergreen;Needleleaved;;;;;;;
+92;Rocky Mountain juniper;Juniperus scopulorum;scopulorum;JUSC;Juniper, Rocky Mountain;Juniperus;juniper;Evergreen;Needleleaved;15-30;;;;;;low
+93;juniper unknown species;Juniperus spp;spp;JU;Juniper unknown species;Juniperus;juniper;Evergreen;Needleleaved;;;;;;;
+94;Eastern Red cedar;Juniperus virginiana;virginiana;JUVI;Cedar, Eastern Red;Juniperus;juniper;Evergreen;Needleleaved;15-30;;;;;;low
+95;Goldenrain tree;Koelreuteria paniculata;paniculata;KOPA;Goldenrain tree;Koelreuteria;Goldenrain tree;Deciduous;Broadleaved;30-40;30-40;rounded, irregular;orange, yellow;yellow clusters;seed capsule;low
+96;Goldenchain tree;Laburnum x watereri;x watereri;LAWA;Goldenchain tree;Laburnum;Goldenchain tree;Deciduous;Broadleaved;;;;;;;
+97;European larch;Larix decidua;decidua;LADE;Larch, European;Larix;larch;Deciduous;Broadleaved;;;;;;;
+98;larch unknown species;Larix spp;spp;LA10;Larch unknown species;Larix;larch;Deciduous;Broadleaved;;;;;;;
+99;Sweetgum;Liquidambar styraciflua;styraciflua;LIST;Sweetgum;Liquidambar;Sweetgum;Deciduous;Broadleaved;60-80;40-60;oval, irregular;orange, purple, red;;seed ball;medium
+100;Tuliptree;Liriodendron tulipifera;tulipifera;LITU;Tuliptree;Liriodendron;Tuliptree;Deciduous;Broadleaved;60-70;30-50;upright;yellow;yellow, tulip-like;seed capsule;medium
+101;Amur maackia;Maackia amurensis;amurensis;MAAM9;Maackia, Amur;Maackia;maackia;Deciduous;Broadleaved;20-30;20-30;rounded;yellow;white;seed pod;low to medium
+102;magnolia unknown species;Magnolia spp;spp;MA1;Magnolia unknown species;Magnolia;magnolia;Deciduous;Broadleaved;;;;;;;
+103;Star magnolia;Magnolia stellata;stellata;MAST;Magnolia, Star;Magnolia;magnolia;Deciduous;Broadleaved;;;;;;;
+104;Saucer magnolia;Magnolia x soulangiana;x soulangiana;MASO;Magnolia, Saucer;Magnolia;magnolia;Deciduous;Broadleaved;20-25;20-25;rounded;bronze;white to purple;seed cluster;medium
+105;Prairie crabapple;Malus ioensis;ioensis;PYIO;Crabapple, Prairie;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+106;Wild apple;Malus pumila;pumila;MAPU;Apple, Wild;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+107;apple unknown species;Malus spp;spp;MA2;Apple unknown species;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+108;crabapple unknown species;Malus spp;spp;MA2;Crabapple unknown species;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+109;Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering;Malus;apple or crabapple;Deciduous;Broadleaved;10-25;10-20;rounded;yellow;white to pink;pome;low to medium
+110;Chonosuki Flowering crabapple;Malus tschonoskii;tschonoskii;MATS;Crabapple, Chonosuki;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+111;White mulberry;Morus alba;alba;MOAL;Mulberry, White;Morus;mulberry;Deciduous;Broadleaved;30-50;30-50;rounded;bronze;;fruitless;medium
+112;Weeping mulberry;Morus alba;alba;MOAL;Mulberry, White Pendula;Morus;mulberry;Deciduous;Broadleaved;;;;;;;
+113;Red mulberry;Morus rubra;rubra;MORU;Mulberry, Red;Morus;mulberry;Deciduous;Broadleaved;;;;;;;
+114;mulberry unknown species;Morus spp;spp;MO;Mulberry unknown species;Morus;mulberry;Deciduous;Broadleaved;;;;;;;
+115;Norway spruce;Picea abies;abies;PIAB;Spruce, Norway;Picea;spruce;Evergreen;Needleleaved;;;;;;;
+116;Engelmann spruce;Picea engelmannii;engelmannii;PIEN;Spruce, Engelmann;Picea;spruce;Evergreen;Needleleaved;;;;;;;
+117;White spruce;Picea glauca;glauca;PIGL1;Spruce, White;Picea;spruce;Evergreen;Needleleaved;20-40;;;;;;medium to high
+118;Serbian spruce;Picea omorika;omorika;PIOM;Spruce, Serbian;Picea;spruce;Evergreen;Needleleaved;;;;;;;
+119;Blue spruce;Picea pungens;pungens;PIPU;Spruce, Blue;Picea;spruce;Evergreen;Needleleaved;30-60;;;;;;medium to high
+120;spruce unknown species;Picea spp;spp;PI1;Spruce unknown species;Picea;spruce;Evergreen;Needleleaved;;;;;;;
+121;Bristlecone pine;Pinus aristata;aristata;PIAR;Pine, Bristlecone;Pinus;pine;Evergreen;Needleleaved;8-20;;;;;;low to medium
+122;Lodgepole pine;Pinus contorta;contorta;PICO;Pine, Lodgepole;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+123;Japanese Umbrella pine;Pinus densiflora;densiflora;PIDE;Pine, Japanese Red Umbraculifera;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+124;Pinyon pine;Pinus edulis;edulis;PIED;Pine, Pinyon;Pinus;pine;Evergreen;Needleleaved;20-50;;;;;;low to medium
+125;Afghan pine;Pinus eldarica;eldarica;PIEL2;Pine, Afghan;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+126;Limber pine;Pinus flexilis;flexilis;PIFL;Pine, Limber;Pinus;pine;Evergreen;Needleleaved;40-60;;;;;;low to medium
+127;Bosnian pine;Pinus heldreichii;heldreichii;PIHE;Pine, Bosnian;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+128;Western White pine;Pinus monticola;monticola;PIMO3;Pine, Western White;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+129;Mugo pine;Pinus mugo;mugo;PIMU;Pine, Mugo;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+130;Austrian pine;Pinus nigra;nigra;PINI;Pine, Austrian;Pinus;pine;Evergreen;Needleleaved;20-60;;;;;;medium
+131;Ponderosa pine;Pinus ponderosa;ponderosa;PIPO;Pine, Ponderosa;Pinus;pine;Evergreen;Needleleaved;60-125;;;;;;low to medium
+132;pine unknown species;Pinus spp;spp;PI2;Pine unknown species;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+133;Southwestern White pine;Pinus strobiformis;strobiformis;PIST2;Pine, Southwestern White;Pinus;pine;Evergreen;Needleleaved;35-50;;;;;;low to medium
+134;Eastern White pine;Pinus strobus;strobus;PIST;Pine, Eastern White;Pinus;pine;Evergreen;Needleleaved;50-80;;;;;;medium
+135;Scotch pine;Pinus sylvestris;sylvestris;PISY;Pine, Scotch;Pinus;pine;Evergreen;Needleleaved;30-60;;;;;;medium
+136;Japanese Black pine;Pinus thunbergiana;thunbergiana;PITH;Pine, Japanese Black;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+137;Bhutan pine;Pinus wallichiana;wallichiana;PIWA1;Pine, Bhutan;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+138;American sycamore;Platanus occidentalis;occidentalis;PLOC;Sycamore, American;Platanus;planetree;Deciduous;Broadleaved;;;;;;;
+139;Oriental planetree;Platanus orientalis;orientalis;PLOR;Planetree, Oriental;Platanus;planetree;Deciduous;Broadleaved;;;;;;;
+140;London planetree;Platanus x acerifolia;x acerifolia;PLAC1;Planetree, London;Platanus;planetree;Deciduous;Broadleaved;60-70;30-60;rounded;bronze;;seed ball;medium to high
+141;Oriental arborvitae;Platycladus orientalis;orientalis;THOR;Arborvitae, Oriental;Platycladus;arborvitae;Evergreen;Needleleaved;;;;;;;
+142;White poplar;Populus alba;alba;POAL;Poplar, White;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+143;Bolleana poplar;Populus alba;alba;POALPY;Poplar, White Bolleana Pyramidalis;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+144;Narrowleaf cottonwood;Populus angustifolia;angustifolia;POAN;Cottonwood, Narrowleaf;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+145;Eastern cottonwood;Populus deltoides;deltoides;PODE;Cottonwood, Eastern;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+146;Fremont cottonwood;Populus fremontii;fremontii;POFR;Cottonwood, Fremont;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+147;Lombardy poplar;Populus nigra;nigra;PONI;Poplar, Lombardy;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+148;Plains cottonwood;Populus deltoides;deltoides;POSA;Cottonwood, Plains Monilifera;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+149;cottonwood unknown species;Populus spp;spp;PO;Cottonwood unknown species;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+150;Quaking aspen;Populus tremuloides;tremuloides;POTR1;Aspen, Quaking;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+151;Lanceleaf cottonwood;Populus x acuminata;x acuminata;POAC5;Cottonwood, Lanceleaf;Populus;cottonwood;Deciduous;Broadleaved;;;;;;;
+152;mesquite unknown species;Prosopis spp;spp;PR6;Mesquite unknown species;Prosopis;mesquite;Deciduous;Broadleaved;;;;;;;
+153;American plum;Prunus americana;americana;PRAM;Plum, American;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+154;Apricot;Prunus armeniaca;armeniaca;PRAR;Apricot;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+155;Sweet cherry;Prunus avium;avium;PRAV;Cherry, Sweet;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+156;Flowering plum;Prunus cerasifera;cerasifera;PRCE;Plum, Flowering;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+157;European plum;Prunus domestica;domestica;PRDO;Plum, European;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+158;Peach;Prunus persica;persica;PRPE2;Peach;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+159;Sand cherry;Prunus pumila;pumila;PRPU1;Cherry, Sand;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+160;Sargent cherry;Prunus sargentii;sargentii;PRSA;Cherry, Sargent;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+161;Black cherry;Prunus serotina;serotina;PRSE1;Cherry, Black;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+162;Kwanzan cherry;Prunus serrulata;serrulata;PRSE2;Cherry, Kwanzan;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+163;plum unknown species;Prunus spp;spp;PR;Plum unknown species;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+164;Chokecherry;Prunus virginiana;virginiana;PRVI;Chokecherry;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+165;Canada Red chokecherry;Prunus virginiana;virginiana;PRVI;Chokecherry, Canada Red;Prunus;plum;Deciduous;Broadleaved;20-30;10-15;rounded;yellow;white;berry;medium
+166;Yoshino Flowering cherry;Prunus yedoensis;yedoensis;PRYE;Cherry, Yoshino Flowering;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+167;Douglas-fir;Pseudotsuga menziesii;menziesii;PSME;Douglas-fir;Pseudotsuga;Douglas-fir;Evergreen;Needleleaved;40-80;;;;;;medium
+168;Common hoptree;Ptelea trifoliata;trifoliata;PTTR;Hoptree, Common;Ptelea;hoptree;Deciduous;Broadleaved;;;;;;;
+169;Flowering pear;Pyrus calleryana;calleryana;PYCA;Pear, Flowering;Pyrus;pear;Deciduous;Broadleaved;30-40;15-28;oval;red;white;pome;low to medium
+170;Fruiting pear;Pyrus communis;communis;PYCO;Pear, Fruiting;Pyrus;pear;Deciduous;Broadleaved;;;;;;;
+171;pear unknown species;Pyrus spp;spp;PY;Pear unknown species;Pyrus;pear;Deciduous;Broadleaved;;;;;;;
+172;Ussurian pear;Pyrus ussuriensis;ussuriensis;PYUS;Pear, Ussurian;Pyrus;pear;Deciduous;Broadleaved;;;;;;;
+173;Sawtooth oak;Quercus acutissima;acutissima;QUAC;Oak, Sawtooth;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+174;White oak;Quercus alba;alba;QUAL;Oak, White;Quercus;oak;Deciduous;Broadleaved;50-70;50-70;rounded;red;;acorn;low to medium
+175;Swamp White oak;Quercus bicolor;bicolor;QUBI;Oak, Swamp White;Quercus;oak;Deciduous;Broadleaved;50-60;50-60;rounded;bronze, orange;;acorn;medium
+176;Scarlet oak;Quercus coccinea;coccinea;QUCO;Oak, Scarlet;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+177;Northern Pin oak;Quercus ellipsoidalis;ellipsoidalis;QUEL;Oak, Northern Pin;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+178;Gambel oak;Quercus gambelii;gambelii;QUGA;Oak, Gamble;Quercus;oak;Deciduous;Broadleaved;20-25;20-30;rounded, irregular;bronze;;acorn;low
+179;Shingle oak;Quercus imbricaria;imbricaria;QUIM;Oak, Shingle;Quercus;oak;Deciduous;Broadleaved;40-50;40-50;oval;bronze, red;;acorn;medium
+180;Overcup oak;Quercus lyrata;lyrata;QULY;Oak, Overcup;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+181;Bur oak;Quercus macrocarpa;macrocarpa;QUMA1;Oak, Bur;Quercus;oak;Deciduous;Broadleaved;60-80;60-80;rounded;bronze;;acorn;low to medium
+182;Chinkapin oak;Quercus muehlenbergii;muehlenbergii;QUMU;Oak, Chinkapin;Quercus;oak;Deciduous;Broadleaved;40-60;50-60;rounded;bronze;;acorn;low to medium
+183;Pin oak;Quercus palustris;palustris;QUPA;Oak, Pin;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+184;Willow oak;Quercus phellos;phellos;QUPH;Oak, Willow;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+185;Chestnut oak;Quercus prinus;prinus;QUPR;Oak, Chestnut;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+186;English oak;Quercus robur;robur;QURO;Oak, English;Quercus;oak;Deciduous;Broadleaved;50-70;50-70;rounded;bronze;;acorn;low to medium
+187;Columnar English oak;Quercus robur;robur;QUROFA;Oak, English Columnar Fastigiata;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+188;Northern Red oak;Quercus rubra;rubra;QURU;Oak, Northern Red;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+189;Shumard oak;Quercus shumardii;shumardii;QUSH;Oak, Shumard;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+190;oak unknown species;Quercus spp;spp;QU;Oak unknown species;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+191;Wavy Leaf oak;Quercus undulata;undulata;QUGA;Oak, Wavy Leaf;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+192;Colorado Foothills oak;Quercus x mazei;x mazei;QUGA;Oak, Colorado Foothills;Quercus;oak;Deciduous;Broadleaved;;;;;;;
+193;European buckthorn;Rhamnus cathartica;cathartica;RHCA;Buckthorn, European;Rhamnus;buckthorn;Deciduous;Broadleaved;;;;;;;
+194;buckthorn unknown species;Rhamnus spp;spp;RHSP2;Buckthorn unknown species;Rhamnus;buckthorn;Deciduous;Broadleaved;;;;;;;
+195;sumac unknown species;Rhus spp;spp;RHSP;Sumac unknown species;Rhus;sumac;Deciduous;Broadleaved;;;;;;;
+196;Staghorn sumac;Rhus typhina;typhina;RHTY;Sumac, Staghorn;Rhus;sumac;Deciduous;Broadleaved;;;;;;;
+197;New Mexico locust;Robinia neomexicana;neomexicana;RONE;Locust, New Mexico;Robinia;locust;Deciduous;Broadleaved;;;;;;;
+198;Black locust;Robinia pseudoacacia;pseudoacacia;ROPS;Locust, Black;Robinia;locust;Deciduous;Broadleaved;;;;;;;
+199;White willow;Salix alba;alba;SAAL4;Willow, White;Salix;willow;Deciduous;Broadleaved;;;;;;;
+200;Peachleaf willow;Salix amygdaloides;amygdaloides;SAAM;Willow, Peachleaf;Salix;willow;Deciduous;Broadleaved;;;;;;;
+201;Weeping willow;Salix babylonica;babylonica;SABA1;Willow, Weeping;Salix;willow;Deciduous;Broadleaved;;;;;;;
+202;Pussy willow;Salix discolor;discolor;SADI;Willow, Pussy;Salix;willow;Deciduous;Broadleaved;;;;;;;
+203;Crack willow;Salix fragilis;fragilis;SAFR;Willow, Crack;Salix;willow;Deciduous;Broadleaved;;;;;;;
+204;Corkscrew willow;Salix matsudana;matsudana;SAMA;Willow, Corkscrew;Salix;willow;Deciduous;Broadleaved;;;;;;;
+205;Black willow;Salix nigra;nigra;SANI;Willow, Black;Salix;willow;Deciduous;Broadleaved;;;;;;;
+206;willow unknown species;Salix spp;spp;SA;Willow unknown species;Salix;willow;Deciduous;Broadleaved;;;;;;;
+207;Giant sequoia;Sequoiadendron giganteum;giganteum;SEGI;Sequoia, Giant;Sequoiadendron;sequoia;Evergreen;Needleleaved;60-200;;;;;;medium to high
+208;Japanese pagoda tree;Styphnolobium japonicum;japonicum;SOJA;Pagoda tree, Japanese;Styphnolobium;pagoda tree;Deciduous;Broadleaved;30-50;35-50;rounded;yellow;white;seed pod;medium
+209;European mountain ash;Sorbus aucuparia;aucuparia;SOAU;Mountain ash, European;Sorbus;mountain ash;Deciduous;Broadleaved;;;;;;;
+210;mountain ash unknown species;Sorbus spp;spp;SO;Mountain ash unknown species;Sorbus;mountain ash;Deciduous;Broadleaved;;;;;;;
+211;Peking lilac tree;Syringa pekinensis;pekinensis;SYRE;Lilac tree, Peking;Syringa;lilac;Deciduous;Broadleaved;;;;;;;
+212;Japanese lilac tree;Syringa reticulata;reticulata;SYRE;Lilac tree, Japanese;Syringa;lilac;Deciduous;Broadleaved;20-25;15-20;oval;yellow;white clusters;seed capsule;low to medium
+213;lilac unknown species;Syringa spp;spp;SYSP;Lilac unknown species;Syringa;lilac;Deciduous;Broadleaved;;;;;;;
+214;Baldcypress;Taxodium distichum;distichum;TADI;Baldcypress;Taxodium;Baldcypress;Evergreen;Needleleaved;50-70;;;;;;medium to high
+215;Yew;Taxus baccata;baccata;TABA;Yew;Taxus;yew;Evergreen;Needleleaved;;;;;;;
+216;yew unknown species;Taxus spp;spp;TA;Yew unknown species;Taxus;yew;Evergreen;Needleleaved;;;;;;;
+217;Arborvitae;Thuja occidentalis;occidentalis;THOC;Arborvitae;Thuja;redcedar;Evergreen;Needleleaved;;;;;;;
+218;Western redcedar;Thuja plicata;plicata;THPL;Redcedar, Western;Thuja;redcedar;Evergreen;Needleleaved;;;;;;;
+219;American linden;Tilia americana;americana;TIAM;Linden, American;Tilia;linden;Deciduous;Broadleaved;;;;;;;
+220;Littleleaf linden;Tilia cordata;cordata;TICO;Linden, Littleleaf;Tilia;linden;Deciduous;Broadleaved;;;;;;;
+221;Silver linden;Tilia tomentosa;tomentosa;TITO;Linden, Silver;Tilia;linden;Deciduous;Broadleaved;;;;;;;
+222;Eastern hemlock;Tsuga canadensis;canadensis;TSCA;Hemlock, Eastern;Tsuga;hemlock;Evergreen;Needleleaved;;;;;;;
+223;American elm;Ulmus americana;americana;ULAM;Elm, American;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+224;Augustine elm;Ulmus americana;americana;ULAM;Elm, American Augustine;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+225;David elm;Ulmus davidiana;davidiana;ULDA;Elm, David;Ulmus;elm;Deciduous;Broadleaved;40-50;40-50;vase;yellow;;samara;low to medium
+226;Wych elm;Ulmus glabra;glabra;ULGL;Elm, Wych;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+227;Camperdown elm;Ulmus glabra;glabra;ULGL;Elm, Wych Camperdown;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+228;Lacebark elm;Ulmus parvifolia;parvifolia;ULPA;Elm, Lacebark;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+229;English elm;Ulmus procera;procera;ULPR;Elm, English;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+230;Emerald Sunshine elm;Ulmus propinqua;propinqua;ULAM;Elm, Emerald Sunshine;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+231;Siberian elm;Ulmus pumila;pumila;ULPU;Elm, Siberian;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+232;elm unknown species;Ulmus spp;spp;ULS;Elm unknown species;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+233;Accolade elm;Ulmus x accolade;x accolade;ULAM;Elm, Accolade;Ulmus;elm;Deciduous;Broadleaved;50-60;25-40;vase;yellow;;samara;medium
+234;Hybrid elm;Ulmus x hybrida;x hybrida;ULAM;Elm, Hybrid;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+235;viburnum unknown species;Viburnum spp;spp;VISP2;Viburnum unknown species;Viburnum;viburnum;Deciduous;Broadleaved;;;;;;;
+236;Japanese zelkova;Zelkova serrata;serrata;ZESE;Zelkova, Japanese;Zelkova;zelkova;Deciduous;Broadleaved;;;;;;;
+237;Hot Wings Tatarian maple;Acer tataricum;tataricum;ACTA;Maple, Tatarian Hot Wings;Acer;maple;Deciduous;Broadleaved;20-25;15-20;rounded;red, yellow;white clusters;samara;low to medium
+238;catalpa unknown species;Catalpa spp;spp;CA3;Catalpa unknown species;Catalpa;catalpa;Deciduous;Broadleaved;;;;;;;
+239;Thornless honeylocust;Gleditsia triacanthos;triacanthos;GLTR;Honeylocust, Thornless;Gleditsia;honeylocust;Deciduous;Broadleaved;40-50;30-40;rounded;yellow;;bean pod ;medium
+240;Chanticleer Flowering pear;Pyrus calleryana;calleryana;PYCA;Pear, Callery Chanticleer;Pyrus;pear;Deciduous;Broadleaved;30-40;15-28;oval;red;white;pome;low to medium
+241;Coralburst Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Coralburst;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+242;Dolgo Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Dolgo;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+243;Prairie Fire Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Prairie Fire;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+244;Radiant Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Radiant;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+245;Spring Snow Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Spring Snow;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+246;Thunderchild Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Thunderchild;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+247;Sensation boxelder;Acer negundo;negundo;ACNE;Boxelder, Sensation;Acer;maple;Deciduous;Broadleaved;;;;;;;
+248;Shellbark hickory;Carya laciniosa;laciniosa;CALA;Hickory, Shellbark;Carya;hickory;Deciduous;Broadleaved;;;;;;;
+249;Common whitebeam;Sorbus aria;aria;SOAR;Whitebeam, Common;Sorbus;mountain ash;Deciduous;Broadleaved;;;;;;;
+250;Valley Forge American elm;Ulmus americana;americana;ULAM;Elm, American Valley Forge;Ulmus;elm;Deciduous;Broadleaved;;;;;;;
+251;Caddo Sugar maple;Acer saccharum;saccharum;ACSA2;Maple, Sugar Caddo;Acer;maple;Deciduous;Broadleaved;40-80;30-60;rounded;orange;;samara;medium
+252;Fall Fiesta Sugar maple;Acer saccharum;saccharum;ACSA2;Maple, Sugar Fall Fiesta;Acer;maple;Deciduous;Broadleaved;40-80;30-60;rounded;orange;;samara;medium
+253;Green Mountain Sugar maple;Acer saccharum;saccharum;ACSA2;Maple, Sugar Green Mountain;Acer;maple;Deciduous;Broadleaved;40-80;30-60;rounded;orange;;samara;
+254;Legacy Sugar maple;Acer saccharum;saccharum;ACSA2;Maple, Sugar Legacy ;Acer;maple;Deciduous;Broadleaved;40-80;30-60;rounded;orange;;samara;
+257;Shade Master Thornless honeylocust;Gleditsia triacanthos;triacanthos;GLTR;Honeylocust, Thornless Shade Master;Gleditsia;honeylocust;Deciduous;Broadleaved;40-50;30-40;rounded;yellow;;seedless;medium
+258;Rocky Mountain Glow Bigtooth maple;Acer grandidentatum;grandidentatum;ACGR3;Maple, Bigtooth Rocky Mountian Glow;Acer;maple;Deciduous;Broadleaved;20-25;15-25;rounded;orange, yellow;;samara;low to medium
+259;Bloodgood London planetree;Platanus x acerifolia;x acerifolia;PLAC1;Planetree, London Bloodgood;Platanus;planetree;Deciduous;Broadleaved;60-70;30-60;rounded;bronze;;seed ball;medium to high
+260;Exclamation London planetree;Platanus x acerifolia;x acerifolia;PLAC1;Planetree, London Exclamation;Platanus;planetree;Deciduous;Broadleaved;60-70;30-60;rounded;bronze;;seed ball;medium to high
+261;Espresso Kentucky coffeetree;Gymnocladus dioicus;dioicus;GYDI;Coffeetree, Kentucky Espresso;Gymnocladus;coffeetree;Deciduous;Broadleaved;60-80;40-45;rounded, irregular;yellow;;bean pod;low to medium
+262;Skyline Thornless honeylocust;Gleditsia triacanthos;triacanthos;GLTR;Honeylocust, Thornless Skyline;Gleditsia;honeylocust;Deciduous;Broadleaved;40-50;30-40;rounded;yellow;;bean pod ;medium
+263;Pecan;Carya illinoinensis;illinoinensis;CAIL;Pecan;Carya;hickory;Deciduous;Broadleaved;50-70;30-50;oval;yellow;;nut, edible;medium
+264;White Shield Osage orange;Maclura pomifera;pomifera;MAPO;Osage orange, White Shield;Maclura;Osage orange;Deciduous;Broadleaved;30-45;20-40;rounded;yellow;;fruitless;low to medium
+265;Cucumber magnolia;Magnolia acuminata;acuminata;MAAC;Magnolia, Cucumber;Magnolia;magnolia;Deciduous;Broadleaved;40-60;20-35;pyramidal;yellow;white;seed cone;medium
+267;Lacebark pine;Pinus bungeana;bungeana;PI2;Pine, Lacebark;Pinus;pine;Evergreen;Needleleaved;;;;;;;
+269;Serviceberry unknown species;Amelanchier spp;spp;AM;Serviceberry unknown species;Amelanchier;Serviceberry;Deciduous;Broadleaved;;;;;;;
+270;walnut unknown species;Juglans spp;spp;JU;Walnut unknown species;Juglans;walnut;Deciduous;Broadleaved;;;;;;;
+575;linden unknown species;Tilia spp;spp;TI;Linden unknown species;Tilia;linden;Deciduous;Broadleaved;;;;;;;
+576;Montmorency cherry;Prunus cerasus;cerasus;PR;Cherry, Flowering Montmorency;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+577;Queen Elizabeth Hedge maple;Acer campestre;campestre;ACCA;Maple, Hedge Queen Elizabeth;Acer;maple;Deciduous;Broadleaved;;;;;;;
+578;Flame Amur maple;Acer ginnala;ginnala;ACGI;Maple, Amur Flame;Acer;maple;;;;;;;;;
+579;Highland Park Bigtooth maple;Acer grandidentatum;grandidentatum;ACGR3;Maple, Bigtooth Highland Park;Acer;maple;;;;;;;;;
+580;Manzano Bigtooth maple;Acer grandidentatum;grandidentatum;ACGR3;Maple, Bigtooth Manzano;Acer;maple;;;;;;;;;
+581;State Street Miyabe maple;Acer miyabei;miyabei;AC;Maple, Miyabe State Street;Acer;maple;;;;;;;;;
+582;Cavalier Norway maple;Acer platanoides;platanoides;ACPL;Maple, Norway Cavalier;Acer;maple;;;;;;;;;
+583;Crimson Sentry Norway maple;Acer platanoides;platanoides;ACPL;Maple, Norway Crimson Sentry;Acer;maple;;;;;;;;;
+584;Emerald Lustre Norway maple;Acer platanoides;platanoides;ACPL;Maple, Norway Emerald Lustre;Acer;maple;;;;;;;;;
+585;Schwedler Norway maple;Acer platanoides;platanoides;ACPL;Maple, Norway Schwedler;Acer;maple;;;;;;;;;
+586;Queen Ann Sweet cherry;Prunus avium;avium;PRAV;Cherry, Sweet Queen Ann;Prunus;plum;Deciduous;Broadleaved;;;;;;;
+587;Crimson King Norway maple;Acer platanoides;platanoides;ACPL;Maple, Norway Crimson King;Acer;maple;Deciduous;Broadleaved;;;;;;;
+588;Louisa Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Louisa;Malus;apple or crabapple;Deciduous;Broadleaved;;;;;;;
+589;Emerald Queen Norway maple;Acer platanoides;platanoides;ACPL;Maple, Norway Emerald Queen;Acer;maple;;;;;;;;;
+590;Northwood Red maple;Acer rubrum;rubrum;ACRU;Maple, Red Northwood;Acer;maple;;;;;;;;;
+895;Pattern Perfect Tatarian maple;Acer tataricum;tataricum;ACTA;Maple, Tatarian Pattern Perfect;Acer;maple;;;;;;;;;
+896;Robin Hill Shadblow Serviceberry;Amelanchier canadensis;canadensis;AMCA;Serviceberry, Shadblow Robin Hill;Amelanchier;Serviceberry;;;;;;;;;
+897;Pendula European hornbeam;Carpinus betulus;betulus;CABE;Hornbeam, European Pendula;Carpinus;hornbeam;;;;;;;;;
+898;Nana Southern catalpa;Catalpa bignonioides;bignonioides;CABI;Catalpa, Southern Nana;Catalpa;catalpa;;;;;;;;;
+899;Covey Eastern redbud;Cercis canadensis;canadensis;CECA;Redbud, Eastern Covey;Cercis;redbud;;;;;;;;;
+900;Summer Tower Eastern redbud;Cercis canadensis;canadensis;CECA;Redbud, Eastern Summer Tower;Cercis;redbud;;;;;;;;;
+901;June Snow Giant Dogwood;Cornus controversa;controversa;CO1;Dogwood, Giant June Snow;Cornus;dogwood;;;;;;;;;
+902;Winter King Green hawthorn;Crataegus viridis;virdis;CRVI;Hawthorn, Green Winter King;Crataegus;hawthorn;;;;;;;;;
+903;Atropunicea European beech;Fagus sylvatica;sylvatica;FASY;Beech, European Atropunicea;Fagus;beech;;;;;;;;;
+904;Pendula European beech;Fagus sylvatica;sylvatica;FASY;Beech, European Pendula;Fagus;beech;;;;;;;;;
+905;Hessei European ash;Fraxinus excelsior;excelsior;FREX;Ash, European Hessei;Fraxinus;ash;;;;;;;;;
+906;Imperial Thornless honeylocust;Gleditsia triacanthos;triacanthos;GLTR;Honeylocust, Thornless Imperial;Gleditsia;honeylocust;;;;;;;;;
+907;Sunburst Thornless honeylocust;Gleditsia triacanthos;triacanthos;GLTR;Honeylocust, Thornless Sunburst;Gleditsia;honeylocust;;;;;;;;;
+908;Stately Manor Kentucky coffeetree;Gymnocladus dioicus;dioicus;GYDI;Coffeetree, Kentucky Stately Manor;Gymnocladus;coffeetree;;;;;;;;;
+909;Spartan Chinese juniper;Juniperus chinensis;chinensis;JUCH;Juniper, Chinese Spartan;Juniperus;juniper;;;;;;;;;
+910;Adams Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Adams;Malus;apple or crabapple;;;;;;;;;
+911;Golden Raindrops Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Golden Raindrops;Malus;apple or crabapple;;;;;;;;;
+912;Indian Magic Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Indian Magic;Malus;apple or crabapple;;;;;;;;;
+913;Perfect Purple Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Perfect Purple;Malus;apple or crabapple;;;;;;;;;
+914;Royal Raindrops Flowering crabapple;Malus sylvestris;sylvestris;MASY2;Crabapple, Flowering Royal Raindrops;Malus;apple or crabapple;;;;;;;;;
+915;Bird's Nest Norway spruce;Picea abies;abies;PIAB;Spruce, Norway Bird's Nest;Picea;spruce;;;;;;;;;
+916;Pendula Norway spruce;Picea abies;abies;PIAB;Spruce, Norway Pendula;Picea;spruce;;;;;;;;;
+917;Dwarf Alberta White spruce;Picea glauca;glauca;PIGL1;Spruce, White Dwarf Alberta;Picea;spruce;;;;;;;;;
+918;Baleri Blue spruce;Picea pungens;pungens;PIPU;Spruce, Blue Bakeri;Picea;spruce;;;;;;;;;
+919;Fastigiata Blue spruce;Picea pungens;pungens;PIPU;Spruce, Blue Fastigiata;Picea;spruce;;;;;;;;;
+920;Globosa Blue spruce;Picea pungens;pungens;PIPU;Spruce, Blue Globosa;Picea;spruce;;;;;;;;;
+921;Hoopsi Blue spruce;Picea pungens;pungens;PIPU;Spruce, Blue Hoopsi;Picea;spruce;;;;;;;;;
+922;Pendula Blue spruce;Picea pungens;pungens;PIPU;Spruce, Blue Pendula;Picea;spruce;;;;;;;;;
+923;Taylor's Sunburst Lodgepole pine;Pinus contorta;contorta;PICO;Pine, Lodgepole Taylor's Sunburst;Pinus;pine;;;;;;;;;
+924;Glauca Scotch pine;Pinus sylvestris;sylvestris;PISY;Pine, Scotch Glauca;Pinus;pine;;;;;;;;;
+925;Erecta European Aspen;Populus tremula;tremula;PO;Aspen, European Erecta;Populus;cottonwood;;;;;;;;;
+926;Newport Flowering plum;Prunus cerasifera;cerasifera;PRCE;Plum, Flowering Newport;Prunus;plum;;;;;;;;;
+927;North Star Sour cherry;Prunus cerasus;cerasus;PR;Cherry, Sour North Star;Prunus;plum;;;;;;;;;
+928;Manchurian plum;Prunus maackii;maackii;"PRMA
+PRMA";Cherry, Manchurian;Prunus;plum;;;;;;;;;
+929;Princess Kay Canada plum;Prunus nigra;nigra;PR;Plum, Canada Princess Kay;Prunus;plum;;;;;;;;;
+930;Autumn Blaze Flowering pear;Pyrus calleryana;calleryana;PYCA;Pear, Callery Autumn Blaze;Pyrus;pear;;;;;;;;;
+931;Redspire Flowering pear;Pyrus calleryana;calleryana;PYCA;Pear, Callery Redspire;Pyrus;pear;;;;;;;;;
+933;Regent Japanese pagoda tree;Styphnolobium japonicum;japonicum;SOJA;Pagoda tree, Japanese Regent;Styphnolobium;pagoda tree;;;;;;;;;
+934;Green Giant Western redcedar;Thuja plicata;plicata;THPL;Redcedar, Western Green Giant;Thuja;redcedar;;;;;;;;;
+935;American Sentry American linden;Tilia americana;americana;TIAM;Linden, American Sentry;Tilia;linden;;;;;;;;;
+936;Redmond American linden;Tilia americana;americana;TIAM;Linden, American Redmond;Tilia;linden;;;;;;;;;
+937;Corinthian Littleleaf linden;Tilia cordata;cordata;TICO;Linden, Littleleaf Corinthian;Tilia;linden;;;;;;;;;
+938;Greenspire Littleleaf linden;Tilia cordata;cordata;TICOG;Linden, Littleleaf Greenspire;Tilia;linden;;;;;;;;;
+939;Sterling Silver linden;Tilia tomentosa;tomentosa;TITO;Linden, Silver Sterling Silver;Tilia;linden;;;;;;;;;
+940;Choice City David elm;Ulmus davidiana;davidiana;ULDA;Elm, David Choice City;Ulmus;elm;;;;;;;;;
+941;Allee Lacebark elm;Ulmus parvifolia;parvifolia;ULPA;Elm, Lacebark Allee;Ulmus;elm;;;;;;;;;
+942;Frontier Hybrid elm;Ulmus x hybrida;x hybrida;ULAM;Elm, Hybrid Frontier;Ulmus;elm;;;;;;;;;
+943;Wilsoniana Prospector Hybrid elm;Ulmus x hybrida;x hybrida;ULAM;Elm, Hybrid Wilsoniana Prospector;Ulmus;elm;;;;;;;;;
+944;Triumph Hybrid elm;Ulmus x hybrida;x hybrida;ULAM;Elm, Hybrid Triumph;Ulmus;elm;;;;;;;;;
