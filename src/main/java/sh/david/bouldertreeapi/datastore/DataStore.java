@@ -17,17 +17,65 @@ import java.util.stream.IntStream;
 
 public class DataStore {
 
-  private Set<Tree> treeSet = new HashSet<>();
-  private Set<Genus> genusSet = new HashSet<>();
-  private Set<Species> speciesSet = new HashSet<>();
+  private final Set<Tree> treeSet = new HashSet<>();
+  private final Set<Genus> genusSet = new HashSet<>();
+  private final Set<Species> speciesSet = new HashSet<>();
 
   public DataStore() throws FileNotFoundException, URISyntaxException {
     List<HashMap<String, String>> rawData = this.loadRawData();
     for (HashMap<String, String> data : rawData) {
       Genus genus = this.addToGenusSet(data);
       Species species = this.addToSpeciesSet(data);
+      Tree tree = this.addToTreeSet(data, species, genus);
     }
-      System.out.print(1);
+  }
+
+  private Tree addToTreeSet(HashMap<String, String> data, Species species, Genus genus) {
+    final String treeIdKey = "TREEID";
+    final String commonNameKey = "COMMONNAME";
+    final String latinNameKey = "LATINNAME";
+    final String leafCycleKey = "LEAFCYCLE";
+    final String leafTypeKey = "LEAFTYPE";
+    final String mathHeightKey = "MATHEIGHT";
+    final String mathWidthKey = "MATWIDTH";
+    final String formKey = "FORM";
+    final String leafFallColorKey = "FALLCOLOR";
+    final String flowerKey = "FLOWER";
+    final String fruitKey = "FRUIT";
+    final String waterNeedKey = "WATERNEED";
+    final Dimensions dimensions = new Dimensions(data.get(mathHeightKey), data.get(mathWidthKey));
+    final String waterNeed = data.get(waterNeedKey).toUpperCase().trim()
+        .replace(' ', '_');
+    final String leafCycle = data.get(leafCycleKey).toUpperCase().trim();
+    final String leafType = data.get(leafTypeKey).toUpperCase().trim();
+
+    List<LeafFallColor> leafFallColorList = Arrays
+        .stream(data.get(leafFallColorKey).split(","))
+        .filter(s -> !s.isEmpty())
+        .map(String::toUpperCase)
+        .map(String::trim)
+        .map(LeafFallColor::valueOf)
+        .collect(Collectors.toList());
+
+    List<Form> formList = Arrays
+        .stream(data.get(formKey).split(","))
+        .filter(s -> !s.isEmpty())
+        .map(String::toUpperCase)
+        .map(String::trim)
+        .map(Form::valueOf)
+        .collect(Collectors.toList());
+
+    Tree tree = new Tree(Integer.parseInt(data.get(treeIdKey)), data.get(commonNameKey),
+        data.get(latinNameKey), species, genus,
+        LeafCycle.valueOf(leafCycle.isEmpty() ? LeafCycle.NOT_SET.toString() : leafCycle),
+        LeafType.valueOf(leafType.isEmpty() ? LeafType.NOT_SET.toString() : leafType),
+        leafFallColorList, dimensions,
+        formList,
+        data.get(flowerKey), data.get(fruitKey),
+        WaterNeed.valueOf(waterNeed.isEmpty() ? WaterNeed.NOT_SET.toString(): waterNeed));
+
+    treeSet.add(tree);
+    return tree;
   }
 
 
@@ -51,6 +99,14 @@ public class DataStore {
 
   public Set<Tree> getTreeSet() {
     return this.treeSet;
+  }
+
+  public Set<Genus> getGenusSet() {
+    return this.genusSet;
+  }
+
+  public Set<Species> getSpeciesSet() {
+    return this.speciesSet;
   }
 
   private List<HashMap<String, String>> loadRawData()

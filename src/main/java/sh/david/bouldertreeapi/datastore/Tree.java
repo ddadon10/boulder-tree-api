@@ -1,6 +1,7 @@
 package sh.david.bouldertreeapi.datastore;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Tree {
 
@@ -11,7 +12,7 @@ public class Tree {
   private Genus genus;
   private LeafCycle leafCycle;
   private LeafType leafType;
-  private LeafFallColor leafFallColor;
+  private List<LeafFallColor> leafFallColorList;
   private Dimensions dimensions;
   private List<Form> formList;
   private String flower;
@@ -19,7 +20,7 @@ public class Tree {
   private WaterNeed waterNeed;
 
   Tree(int id, String commonName, String latinName, Species species, Genus genus,
-      LeafCycle leafCycle, LeafType leafType, LeafFallColor leafFallColor,
+      LeafCycle leafCycle, LeafType leafType, List<LeafFallColor> leafFallColorList,
       Dimensions dimensions, List<Form> formList, String flower, String fruit,
       WaterNeed waterNeed) {
     this.id = id;
@@ -29,7 +30,7 @@ public class Tree {
     this.genus = genus;
     this.leafCycle = leafCycle;
     this.leafType = leafType;
-    this.leafFallColor = leafFallColor;
+    this.leafFallColorList = leafFallColorList;
     this.dimensions = dimensions;
     this.formList = formList;
     this.flower = flower;
@@ -65,8 +66,8 @@ public class Tree {
     return this.leafType;
   }
 
-  public LeafFallColor getLeafFallColor() {
-    return this.leafFallColor;
+  public List<LeafFallColor> getLeafFallColorList() {
+    return this.leafFallColorList;
   }
 
   public Dimensions getDimensions() {
@@ -88,14 +89,31 @@ public class Tree {
   public WaterNeed getWaterNeed() {
     return this.waterNeed;
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    Tree OtherTree = (Tree) o;
+    return this.getId() == OtherTree.getId();
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(this.getId());
+  }
 }
 
 class Dimensions {
 
-  private final int maxHeight;
-  private final int minWidth;
-  private final int minHeight;
-  private final int maxWidth;
+  private int maxHeight = -1;
+  private int minWidth = -1;
+  private int minHeight = -1;
+  private int maxWidth = -1;
 
   public int getMinHeight() {
     return this.minHeight;
@@ -113,18 +131,25 @@ class Dimensions {
     return this.maxWidth;
   }
 
-  Dimensions(int minHeight, int maxHeight, int minWidth, int maxWidth) {
-    this.minHeight = minHeight;
-    this.maxHeight = maxHeight;
-    this.minWidth = minWidth;
-    this.maxWidth = maxWidth;
+  Dimensions(String height, String width) {
+  if (!height.isEmpty()) {
+    String[] heightParsed = height.split("-");
+    this.minHeight = Integer.parseInt(heightParsed[0]);
+    this.maxHeight = Integer.parseInt(heightParsed[1]);
+  }
+  if (!width.isEmpty()) {
+    String[] widthParsed = width.split("-");
+    this.minWidth = Integer.parseInt(widthParsed[0]);
+    this.maxWidth = Integer.parseInt(widthParsed[1]);
+  }
+
   }
 }
 
 enum Form {
-  OVAL, ROUNDED, PYRIMIDAL, IRREGULAR, VASE, UPRIGHT;
+  OVAL, ROUNDED, PYRAMIDAL, IRREGULAR, VASE, UPRIGHT;
 }
 
 enum WaterNeed {
-  LOW, LOW_TO_MEDIUM, MEDIUM, MEDIUM_TO_HIGH, HIGH;
+  LOW, LOW_TO_MEDIUM, MEDIUM, MEDIUM_TO_HIGH, HIGH, NOT_SET;
 }
