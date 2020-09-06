@@ -1,5 +1,8 @@
 package sh.david.bouldertreeapi.datastore;
 
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+
 public class Genus {
 
   final private String genus;
@@ -16,6 +19,11 @@ public class Genus {
 
   String getGenusEnglish() {
     return this.genusEnglish;
+  }
+
+  @Override
+  public int hashCode() {
+    return 1;
   }
 
 }

@@ -314,8 +314,7 @@ TREEID;COMMONNAME;LATINNAME;SPECIES;SPECIESCODE;SPECIESNAME;GENUS;GENUSENGLISH;L
 925;Erecta European Aspen;Populus tremula;tremula;PO;Aspen, European Erecta;Populus;cottonwood;;;;;;;;;
 926;Newport Flowering plum;Prunus cerasifera;cerasifera;PRCE;Plum, Flowering Newport;Prunus;plum;;;;;;;;;
 927;North Star Sour cherry;Prunus cerasus;cerasus;PR;Cherry, Sour North Star;Prunus;plum;;;;;;;;;
-928;Manchurian plum;Prunus maackii;maackii;"PRMA
-PRMA";Cherry, Manchurian;Prunus;plum;;;;;;;;;
+928;Manchurian plum;Prunus maackii;maackii;PRMA\nPRMA;Cherry, Manchurian;Prunus;plum;;;;;;;;;
 929;Princess Kay Canada plum;Prunus nigra;nigra;PR;Plum, Canada Princess Kay;Prunus;plum;;;;;;;;;
 930;Autumn Blaze Flowering pear;Pyrus calleryana;calleryana;PYCA;Pear, Callery Autumn Blaze;Pyrus;pear;;;;;;;;;
 931;Redspire Flowering pear;Pyrus calleryana;calleryana;PYCA;Pear, Callery Redspire;Pyrus;pear;;;;;;;;;
