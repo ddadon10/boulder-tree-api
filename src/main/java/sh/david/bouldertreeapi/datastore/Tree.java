@@ -9,14 +9,17 @@ public class Tree {
   private String latinName;
   private Species species;
   private Genus genus;
-  private Leaf leaf;
+  private LeafCycle leafCycle;
+  private LeafType leafType;
+  private LeafFallColor leafFallColor;
   private Dimensions dimensions;
   private List<Form> formList;
   private String flower;
   private String fruit;
   private WaterNeed waterNeed;
 
-  Tree(int id, String commonName, String latinName, Species species, Genus genus, Leaf leaf,
+  Tree(int id, String commonName, String latinName, Species species, Genus genus,
+      LeafCycle leafCycle, LeafType leafType, LeafFallColor leafFallColor,
       Dimensions dimensions, List<Form> formList, String flower, String fruit,
       WaterNeed waterNeed) {
     this.id = id;
@@ -24,7 +27,9 @@ public class Tree {
     this.latinName = latinName;
     this.species = species;
     this.genus = genus;
-    this.leaf = leaf;
+    this.leafCycle = leafCycle;
+    this.leafType = leafType;
+    this.leafFallColor = leafFallColor;
     this.dimensions = dimensions;
     this.formList = formList;
     this.flower = flower;
@@ -52,8 +57,16 @@ public class Tree {
     return this.genus;
   }
 
-  public Leaf getLeaf() {
-    return this.leaf;
+  public LeafCycle getLeafCycle() {
+    return this.leafCycle;
+  }
+
+  public LeafType getLeafType() {
+    return this.leafType;
+  }
+
+  public LeafFallColor getLeafFallColor() {
+    return this.leafFallColor;
   }
 
   public Dimensions getDimensions() {

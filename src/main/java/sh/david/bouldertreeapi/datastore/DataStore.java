@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -20,21 +18,35 @@ import java.util.stream.IntStream;
 public class DataStore {
 
   private Set<Tree> treeSet = new HashSet<>();
-  private Set<Leaf> leafSet = new HashSet<>();
   private Set<Genus> genusSet = new HashSet<>();
   private Set<Species> speciesSet = new HashSet<>();
 
   public DataStore() throws FileNotFoundException, URISyntaxException {
     List<HashMap<String, String>> rawData = this.loadRawData();
-    for(HashMap<String, String> data: rawData) {
-      this.addToGenusSet(data);
+    for (HashMap<String, String> data : rawData) {
+      Genus genus = this.addToGenusSet(data);
+      Species species = this.addToSpeciesSet(data);
     }
+      System.out.print(1);
   }
 
-  private void addToGenusSet(HashMap<String, String> data) {
-    String genusKey = "GENUS";
-    String genusEnglishKey = "GENUSENGLISH";
-    genusSet.add(new Genus(data.get(genusKey), data.get(genusEnglishKey)));
+
+  private Genus addToGenusSet(HashMap<String, String> data) {
+    final String genusKey = "GENUS";
+    final String genusEnglishKey = "GENUSENGLISH";
+    Genus genus = new Genus(data.get(genusKey), data.get(genusEnglishKey));
+    genusSet.add(genus);
+    return genus;
+  }
+
+  private Species addToSpeciesSet(HashMap<String, String> data) {
+    final String speciesCodeKey = "SPECIESCODE";
+    final String speciesKey = "SPECIES";
+    final String speciesCodeName = "SPECIESNAME";
+    Species species = new Species(data.get(speciesCodeKey), data.get(speciesKey),
+        data.get(speciesCodeName));
+    speciesSet.add(species);
+    return species;
   }
 
   public Set<Tree> getTreeSet() {
@@ -63,7 +75,7 @@ public class DataStore {
 
       data.add(element);
     }
-   return data;
+    return data;
   }
 
 }

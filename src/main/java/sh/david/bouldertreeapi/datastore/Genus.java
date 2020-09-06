@@ -1,7 +1,6 @@
 package sh.david.bouldertreeapi.datastore;
 
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.EqualsBuilder;
+import java.util.Objects;
 
 public class Genus {
 
@@ -22,8 +21,20 @@ public class Genus {
   }
 
   @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    Genus otherGenus = (Genus) o;
+    return this.genus.equals(otherGenus.getGenus());
+  }
+
+  @Override
   public int hashCode() {
-    return 1;
+    return Objects.hash(this.genus);
   }
 
 }
