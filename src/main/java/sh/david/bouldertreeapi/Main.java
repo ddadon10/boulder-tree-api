@@ -14,7 +14,7 @@ import sh.david.bouldertreeapi.datastore.DataStore;
 public class Main {
 
   // Base URI the Grizzly HTTP server will listen on
-  public static final String BASE_URI = "http://localhost:8000/myapp/";
+  public static final String BASE_URI = "http://localhost:8000/boulder-tree-api/";
   public static DataStore DATASTORE;
 
 

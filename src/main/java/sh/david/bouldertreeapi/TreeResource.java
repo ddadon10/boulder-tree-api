@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import sh.david.bouldertreeapi.datastore.Tree;
 
-@Path("trees")
+@Path("/trees")
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public class TreeResource {
 
@@ -26,6 +26,9 @@ public class TreeResource {
   @Path("/{id}")
   public Response getTreeById(@PathParam("id") int id) {
     Tree tree = trees.get(id);
+    if (tree == null) {
+      return Response.status(404).build();
+    }
     return Response.ok().entity(tree).build();
 
   }
