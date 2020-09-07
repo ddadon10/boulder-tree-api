@@ -2,24 +2,41 @@ package sh.david.bouldertreeapi.datastore;
 
 import java.util.List;
 import java.util.Objects;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
 public class Tree {
-
+  @XmlElement
   private int id;
+  @XmlElement
   private String commonName;
+  @XmlElement
   private String latinName;
+  @XmlElement
   private Species species;
+  @XmlElement
   private Genus genus;
+  @XmlElement
   private LeafCycle leafCycle;
+  @XmlElement
   private LeafType leafType;
+  @XmlElement
   private List<LeafFallColor> leafFallColorList;
+  @XmlElement
   private Dimensions dimensions;
+  @XmlElement
   private List<Form> formList;
+  @XmlElement
   private String flower;
+  @XmlElement
   private String fruit;
+  @XmlElement
   private WaterNeed waterNeed;
 
-  Tree(int id, String commonName, String latinName, Species species, Genus genus,
+  public Tree(){}
+
+  public Tree(int id, String commonName, String latinName, Species species, Genus genus,
       LeafCycle leafCycle, LeafType leafType, List<LeafFallColor> leafFallColorList,
       Dimensions dimensions, List<Form> formList, String flower, String fruit,
       WaterNeed waterNeed) {
@@ -108,11 +125,15 @@ public class Tree {
   }
 }
 
+@XmlRootElement
 class Dimensions {
-
+  @XmlElement
   private int maxHeight = -1;
+  @XmlElement
   private int minWidth = -1;
+  @XmlElement
   private int minHeight = -1;
+  @XmlElement
   private int maxWidth = -1;
 
   public int getMinHeight() {
@@ -130,7 +151,7 @@ class Dimensions {
   public int getMaxWidth() {
     return this.maxWidth;
   }
-
+  Dimensions() {}
   Dimensions(String height, String width) {
   if (!height.isEmpty()) {
     String[] heightParsed = height.split("-");

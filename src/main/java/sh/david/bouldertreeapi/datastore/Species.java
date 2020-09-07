@@ -1,14 +1,20 @@
 package sh.david.bouldertreeapi.datastore;
 
 import java.util.Objects;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
 public class Species {
+  @XmlElement
+  private String code;
+  @XmlElement
+  private String species;
+  @XmlElement
+  private String name;
 
-  final private String code;
-  final private String species;
-  final private String name;
-
-  Species(String code, String species, String name) {
+  public Species(){}
+  public Species(String code, String species, String name) {
     this.code = code;
     this.species = species;
     this.name = name;

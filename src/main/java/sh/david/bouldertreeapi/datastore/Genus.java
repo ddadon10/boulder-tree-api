@@ -1,13 +1,19 @@
 package sh.david.bouldertreeapi.datastore;
 
 import java.util.Objects;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
 public class Genus {
 
-  final private String genus;
-  final private String genusEnglish;
+  @XmlElement
+  private String genus;
+  @XmlElement
+  private String genusEnglish;
 
-  Genus(String genus, String genusEnglish) {
+  public Genus(){}
+  public Genus(String genus, String genusEnglish) {
     this.genus = genus;
     this.genusEnglish = genusEnglish;
   }
