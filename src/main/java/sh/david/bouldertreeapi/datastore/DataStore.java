@@ -7,19 +7,19 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.TreeMap;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 
 public class DataStore {
-
-  private final Set<Tree> treeSet = new HashSet<>();
-  private final Set<Genus> genusSet = new HashSet<>();
-  private final Set<Species> speciesSet = new HashSet<>();
+  // Treemap implement Sortedmap, it's a good data structure for that kind of usage because unique
+  // keys and sorted so the /trees endpoint will always return the same result
+  private final TreeMap<Integer, Tree> treeDatabase = new TreeMap<>();
+  private final TreeMap<String, Genus>genusDatabase = new TreeMap<>();
+  private final TreeMap<String, Species> speciesDatabase = new TreeMap<>();
 
   public DataStore() throws FileNotFoundException, URISyntaxException {
     List<HashMap<String, String>> rawData = this.loadRawData();
@@ -73,8 +73,7 @@ public class DataStore {
         formList,
         data.get(flowerKey), data.get(fruitKey),
         WaterNeed.valueOf(waterNeed.isEmpty() ? WaterNeed.NOT_SET.toString(): waterNeed));
-
-    treeSet.add(tree);
+    treeDatabase.put(tree.getId(), tree);
     return tree;
   }
 
@@ -83,7 +82,7 @@ public class DataStore {
     final String genusKey = "GENUS";
     final String genusEnglishKey = "GENUSENGLISH";
     Genus genus = new Genus(data.get(genusKey), data.get(genusEnglishKey));
-    genusSet.add(genus);
+    genusDatabase.put(genus.getGenus(), genus);
     return genus;
   }
 
@@ -93,20 +92,20 @@ public class DataStore {
     final String speciesCodeName = "SPECIESNAME";
     Species species = new Species(data.get(speciesCodeKey), data.get(speciesKey),
         data.get(speciesCodeName));
-    speciesSet.add(species);
+    speciesDatabase.put(species.getCode(), species);
     return species;
   }
 
-  public Set<Tree> getTreeSet() {
-    return this.treeSet;
+  public TreeMap<Integer, Tree> getTreeDatabase() {
+    return this.treeDatabase;
   }
 
-  public Set<Genus> getGenusSet() {
-    return this.genusSet;
+  public TreeMap<String, Genus> getGenusDatabase() {
+    return this.genusDatabase;
   }
 
-  public Set<Species> getSpeciesSet() {
-    return this.speciesSet;
+  public TreeMap<String, Species>getSpeciesDatabase() {
+    return this.speciesDatabase;
   }
 
   private List<HashMap<String, String>> loadRawData()
