@@ -1,11 +1,15 @@
 package sh.david.bouldertreeapi.datastore;
 
+import java.io.StringReader;
 import java.util.Objects;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Species {
+
   @XmlElement
   private String code;
   @XmlElement
@@ -13,7 +17,9 @@ public class Species {
   @XmlElement
   private String name;
 
-  public Species(){}
+  public Species() {
+  }
+
   public Species(String code, String species, String name) {
     this.code = code;
     this.species = species;

@@ -1,6 +1,7 @@
 package sh.david.bouldertreeapi;
 import java.io.FileNotFoundException;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -16,10 +17,11 @@ public class Main {
   // Base URI the Grizzly HTTP server will listen on
   public static final String BASE_URI = "http://localhost:8000/boulder-tree-api/";
   public static DataStore DATASTORE;
-
+  public static ArrayList<String> SPECIAL_QUERYPARAMS = new ArrayList<>();
 
   static {
     try {
+      SPECIAL_QUERYPARAMS.add("orderBy");
       DATASTORE = new DataStore();
     } catch (FileNotFoundException | URISyntaxException e) {
       e.printStackTrace();
