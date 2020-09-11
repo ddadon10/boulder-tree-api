@@ -1,11 +1,9 @@
 package sh.david.bouldertreeapi.datastore;
 
-import java.io.StringReader;
 import java.util.Objects;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import sh.david.bouldertreeapi.utils.Utils;
 
 @XmlRootElement
 public class Species {
@@ -38,6 +36,26 @@ public class Species {
     return this.name;
   }
 
+  public static Species fromString(String string){
+    // Todo: Add XML unmarhsalling
+    return Utils.unmarshalJson(string, Species.class);
+  }
+
+
+  public boolean goodEnoughEquals(Species otherSpecies){
+    if (otherSpecies.getSpecies() != null && this.getSpecies().equals(otherSpecies.getSpecies())){
+      return true;
+    }
+    if (otherSpecies.getCode() != null && this.getCode().equals(otherSpecies.getCode())){
+      return true;
+    }
+
+    if (otherSpecies.getName() != null && this.getName().contains(otherSpecies.getName())){
+      return true;
+    }
+
+    return false;
+  }
   @Override
   public boolean equals(Object o) {
     if (this == o) {

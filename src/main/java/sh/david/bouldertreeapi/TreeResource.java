@@ -17,6 +17,7 @@ import sh.david.bouldertreeapi.datastore.Form;
 import sh.david.bouldertreeapi.datastore.LeafCycle;
 import sh.david.bouldertreeapi.datastore.LeafFallColor;
 import sh.david.bouldertreeapi.datastore.LeafType;
+import sh.david.bouldertreeapi.datastore.Species;
 import sh.david.bouldertreeapi.datastore.Tree;
 import sh.david.bouldertreeapi.datastore.WaterNeed;
 
@@ -36,7 +37,7 @@ public class TreeResource {
       @QueryParam("id") List<Integer> id,
       @QueryParam("commonName") List<String> commonName,
       @QueryParam("latinName") List<String> latinName,
-      /*TODO: Fix unmarshalling before @QueryParam("species") List<Species> species,*/
+      @QueryParam("species") List<Species> species,
       /*TODO: Fix unmarshalling before @QueryParam("genus") List<Genus> genus,*/
       @QueryParam("leafCylce") List<LeafCycle> leafCycle,
       @QueryParam("leafType") List<LeafType> leafType,
@@ -62,6 +63,9 @@ public class TreeResource {
           continue;
         }
         if (!latinName.isEmpty() && !latinName.contains(tree.getLatinName())) {
+          continue;
+        }
+        if(!species.isEmpty() && species.stream().noneMatch(tree.getSpecies()::goodEnoughEquals)) {
           continue;
         }
         if (!leafCycle.isEmpty() && !leafCycle.contains(tree.getLeafCycle())) {
