@@ -4,10 +4,11 @@ import java.util.Objects;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import org.json.JSONException;
+import sh.david.bouldertreeapi.datastore.interfaces.FuzzySearch;
 import sh.david.bouldertreeapi.utils.Utils;
 
 @XmlRootElement
-public class Species {
+public class Species implements FuzzySearch<Species> {
 
   @XmlElement
   private String code;
@@ -47,7 +48,7 @@ public class Species {
     }
   }
 
-
+  @Override
   public boolean goodEnoughEquals(Species otherSpecies){
     if (otherSpecies.getSpecies() != null && this.getSpecies().equals(otherSpecies.getSpecies())){
       return true;
@@ -76,6 +77,6 @@ public class Species {
 
   @Override
   public int hashCode() {
-    return Objects.hash(code);
+    return Objects.hash(this.code);
   }
 }

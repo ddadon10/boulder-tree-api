@@ -1,4 +1,4 @@
-package sh.david.bouldertreeapi;
+package sh.david.bouldertreeapi.resource;
 
 import java.util.TreeMap;
 import javax.ws.rs.GET;
@@ -7,6 +7,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import sh.david.bouldertreeapi.Main;
 import sh.david.bouldertreeapi.datastore.Genus;
 
 @Path("/genus")

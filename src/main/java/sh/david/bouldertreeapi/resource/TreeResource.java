@@ -1,4 +1,4 @@
-package sh.david.bouldertreeapi;
+package sh.david.bouldertreeapi.resource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,10 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
+import sh.david.bouldertreeapi.Main;
+import sh.david.bouldertreeapi.datastore.Dimensions;
+import sh.david.bouldertreeapi.datastore.Genus;
+import sh.david.bouldertreeapi.utils.ResponseEntity;
 import sh.david.bouldertreeapi.datastore.Form;
 import sh.david.bouldertreeapi.datastore.LeafCycle;
 import sh.david.bouldertreeapi.datastore.LeafFallColor;
@@ -32,17 +36,17 @@ public class TreeResource {
   public Response getTrees(
       @Context() UriInfo uriInfo,
       @QueryParam("orderBy") String orderBy,
-      @DefaultValue ("-1") @QueryParam("maxSize") int maxSize,
+      @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("id") List<Integer> id,
       @QueryParam("commonName") List<String> commonName,
       @QueryParam("latinName") List<String> latinName,
       @QueryParam("species") List<Species> species,
-      /*TODO: Fix unmarshalling before @QueryParam("genus") List<Genus> genus,*/
+      @QueryParam("genus") List<Genus> genus,
       @QueryParam("leafCylce") List<LeafCycle> leafCycle,
       @QueryParam("leafType") List<LeafType> leafType,
       @QueryParam("leafFallColorList") List<LeafFallColor> leafFallColorList,
-      /*TODO: Fix unmarshalling before @QueryParam("Dimensions") List<Dimensions> dimensions, */
+      @QueryParam("dimensions") List<Dimensions> dimensions,
       @QueryParam("formList") List<Form> formList,
       @QueryParam("flower") List<String> flower,
       @QueryParam("fruit") List<String> fruit,
@@ -65,7 +69,10 @@ public class TreeResource {
         if (!latinName.isEmpty() && !latinName.contains(tree.getLatinName())) {
           continue;
         }
-        if(!species.isEmpty() && species.stream().noneMatch(tree.getSpecies()::goodEnoughEquals)) {
+        if (!species.isEmpty() && species.stream().noneMatch(tree.getSpecies()::goodEnoughEquals)) {
+          continue;
+        }
+        if (!genus.isEmpty() && genus.stream().noneMatch(tree.getGenus()::goodEnoughEquals)) {
           continue;
         }
         if (!leafCycle.isEmpty() && !leafCycle.contains(tree.getLeafCycle())) {
@@ -78,17 +85,21 @@ public class TreeResource {
             .noneMatch(el -> tree.getLeafFallColorList().contains(el))) {
           continue;
         }
+        if (!dimensions.isEmpty() && dimensions.stream()
+            .noneMatch(tree.getDimensions()::goodEnoughEquals)) {
+          continue;
+        }
         if (!formList.isEmpty() && formList.stream()
             .noneMatch(el -> tree.getFormList().contains(el))) {
           continue;
         }
-        if(!flower.isEmpty() && !flower.contains(tree.getFlower())){
+        if (!flower.isEmpty() && !flower.contains(tree.getFlower())) {
           continue;
         }
-        if(!fruit.isEmpty() && !fruit.contains(tree.getFruit())){
+        if (!fruit.isEmpty() && !fruit.contains(tree.getFruit())) {
           continue;
         }
-        if(!waterNeed.isEmpty() && !waterNeed.contains(tree.getWaterNeed())){
+        if (!waterNeed.isEmpty() && !waterNeed.contains(tree.getWaterNeed())) {
           continue;
         }
         filteredTrees.add(tree);
@@ -96,11 +107,11 @@ public class TreeResource {
 
     }
 
-    if (maxSize>0 && page>0){
+    if (maxSize > 0 && page > 0) {
       int filteredTreesSize = filteredTrees.size();
       int pageIndex = Math.min((page - 1) * maxSize, filteredTreesSize);
-      int maxSizeIndex = Math.min(pageIndex+maxSize, filteredTreesSize);
-      double numberOfPage = Math.ceil((float) filteredTreesSize/maxSize);
+      int maxSizeIndex = Math.min(pageIndex + maxSize, filteredTreesSize);
+      double numberOfPage = Math.ceil((float) filteredTreesSize / maxSize);
       responseEntity.setCurrentPage(page);
       responseEntity.setNumberOfPage(numberOfPage);
       filteredTrees = filteredTrees.subList(pageIndex, maxSizeIndex);

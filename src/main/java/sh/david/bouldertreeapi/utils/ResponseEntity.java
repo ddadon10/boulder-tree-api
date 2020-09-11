@@ -1,4 +1,4 @@
-package sh.david.bouldertreeapi;
+package sh.david.bouldertreeapi.utils;
 
 
 import javax.xml.bind.annotation.XmlElement;
