@@ -21,11 +21,11 @@ public class Genus implements FuzzySearch<Genus> {
     this.genusEnglish = genusEnglish;
   }
 
-  String getGenus() {
+  public String getGenus() {
     return this.genus;
   }
 
-  String getGenusEnglish() {
+  public String getGenusEnglish() {
     return this.genusEnglish;
   }
 

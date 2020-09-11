@@ -1,5 +1,7 @@
 package sh.david.bouldertreeapi.resource;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeMap;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
@@ -7,26 +9,48 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.UriInfo;
 import sh.david.bouldertreeapi.Main;
 import sh.david.bouldertreeapi.datastore.Genus;
 
+import sh.david.bouldertreeapi.datastore.Species;
 import sh.david.bouldertreeapi.utils.PaginatedEntity;
 
 @Path("/genus")
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public class GenusResource {
 
-  TreeMap<String, Genus> genus = Main.DATASTORE.getGenusDatabase();
+  TreeMap<String, Genus> genusDb = Main.DATASTORE.getGenusDatabase();
 
   @GET
   @Path("/")
   public Response getGenus(
+      @Context UriInfo uriInfo,
       @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
-      @DefaultValue("1") @QueryParam("page") int page) {
+      @DefaultValue("1") @QueryParam("page") int page,
+      @QueryParam("genus") List<String> genusProperty,
+      @QueryParam("genusEnglish") List<String> genusEnglish) {
+    List<Genus> genusList = new ArrayList<>(genusDb.values());
+    List<Genus> filteredGenus = new ArrayList<>();
+    if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
+      filteredGenus = genusList;
+    } else {
+      for (Genus genus : genusList) {
+        if (!genusProperty.isEmpty() && !genusProperty.contains(genus.getGenus())) {
+          continue;
+        }
+        if (!genusEnglish.isEmpty() && !genusEnglish.contains(genus.getGenusEnglish())) {
+          continue;
+        }
+        filteredGenus.add(genus);
+      }
+    }
+
     PaginatedEntity<Genus> paginatedEntity = new PaginatedEntity<>(
-        genus.values().toArray(new Genus[0]), maxSize, page);
+        filteredGenus.toArray(new Genus[0]), maxSize, page);
 
     return Response.ok().entity(paginatedEntity).build();
   }
@@ -34,7 +58,7 @@ public class GenusResource {
   @GET
   @Path("/{name}")
   public Response getGenus(@PathParam("name") String name) {
-    Genus genusByName = genus.get(name);
+    Genus genusByName = genusDb.get(name);
     if (genusByName == null) {
       return Response.status(404).build();
     }

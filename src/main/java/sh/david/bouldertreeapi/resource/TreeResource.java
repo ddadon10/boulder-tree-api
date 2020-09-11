@@ -29,13 +29,12 @@ import sh.david.bouldertreeapi.datastore.WaterNeed;
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public class TreeResource {
 
-  TreeMap<Integer, Tree> trees = Main.DATASTORE.getTreeDatabase();
+  TreeMap<Integer, Tree> treesDb = Main.DATASTORE.getTreeDatabase();
 
   @GET
   @Path("/")
   public Response getTrees(
       @Context() UriInfo uriInfo,
-      @QueryParam("orderBy") String orderBy,
       @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("id") List<Integer> id,
@@ -52,7 +51,7 @@ public class TreeResource {
       @QueryParam("fruit") List<String> fruit,
       @QueryParam("waterNeed") List<WaterNeed> waterNeed
   ) {
-    List<Tree> treeList = new ArrayList<>(trees.values());
+    List<Tree> treeList = new ArrayList<>(treesDb.values());
     List<Tree> filteredTrees = new ArrayList<>();
 
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
@@ -113,7 +112,7 @@ public class TreeResource {
   @GET
   @Path("/{id}")
   public Response getTreeById(@PathParam("id") int id) {
-    Tree tree = trees.get(id);
+    Tree tree = treesDb.get(id);
     if (tree == null) {
       return Response.status(404).build();
     }
