@@ -3,6 +3,7 @@ package sh.david.bouldertreeapi;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
+import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -12,7 +13,6 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
-import sh.david.bouldertreeapi.datastore.Dimensions;
 import sh.david.bouldertreeapi.datastore.Form;
 import sh.david.bouldertreeapi.datastore.LeafCycle;
 import sh.david.bouldertreeapi.datastore.LeafFallColor;
@@ -31,6 +31,8 @@ public class TreeResource {
   public Response getTrees(
       @Context() UriInfo uriInfo,
       @QueryParam("orderBy") String orderBy,
+      @DefaultValue ("-1") @QueryParam("maxSize") int maxSize,
+      @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("id") List<Integer> id,
       @QueryParam("commonName") List<String> commonName,
       @QueryParam("latinName") List<String> latinName,
@@ -47,6 +49,7 @@ public class TreeResource {
   ) {
     List<Tree> treeList = new ArrayList<>(trees.values());
     List<Tree> filteredTrees = new ArrayList<>();
+    ResponseEntity<Tree> responseEntity = new ResponseEntity<>();
 
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
       filteredTrees = treeList;
@@ -86,10 +89,23 @@ public class TreeResource {
         }
         filteredTrees.add(tree);
       }
+
     }
 
+    if (maxSize>0 && page>0){
+      int filteredTreesSize = filteredTrees.size();
+      int pageIndex = Math.min((page - 1) * maxSize, filteredTreesSize);
+      int maxSizeIndex = Math.min(pageIndex+maxSize, filteredTreesSize);
+      double numberOfPage = Math.ceil((float) filteredTreesSize/maxSize);
+      responseEntity.setCurrentPage(page);
+      responseEntity.setNumberOfPage(numberOfPage);
+      filteredTrees = filteredTrees.subList(pageIndex, maxSizeIndex);
+
+    }
+    responseEntity.setPayload(filteredTrees.toArray(new Tree[0]));
+
     System.out.print(1);
-    return Response.ok().entity(filteredTrees.toArray(new Tree[0])).build();
+    return Response.ok().entity(responseEntity).build();
   }
 
   @GET
