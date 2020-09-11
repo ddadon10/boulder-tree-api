@@ -38,10 +38,9 @@ public class Species {
   }
 
   public static Species fromString(String string){
-    // Todo: Add XML unmarhsalling
     try{
-      return Utils.unmarshalJson(string, Species.class);
-    } catch (JSONException e) {
+      return Utils.unmarshal(string, Species.class);
+    } catch (JSONException | IllegalArgumentException e) {
       e.printStackTrace();
       // Todo: Return 500 instead
       return new Species();
