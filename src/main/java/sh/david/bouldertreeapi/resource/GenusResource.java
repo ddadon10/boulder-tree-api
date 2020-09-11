@@ -25,12 +25,8 @@ public class GenusResource {
   public Response getGenus(
       @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page) {
-    PaginatedEntity<Genus> paginatedEntity;
-    if (maxSize > 0 && page > 0) {
-      paginatedEntity = new PaginatedEntity<>(genus.values().toArray(new Genus[0]), page, maxSize);
-    } else {
-      paginatedEntity = new PaginatedEntity<>(genus.values().toArray(new Genus[0]));
-    }
+    PaginatedEntity<Genus> paginatedEntity = new PaginatedEntity<>(
+        genus.values().toArray(new Genus[0]), maxSize, page);
 
     return Response.ok().entity(paginatedEntity).build();
   }

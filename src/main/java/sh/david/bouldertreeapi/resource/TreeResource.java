@@ -10,7 +10,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
-import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
@@ -55,7 +54,6 @@ public class TreeResource {
   ) {
     List<Tree> treeList = new ArrayList<>(trees.values());
     List<Tree> filteredTrees = new ArrayList<>();
-    PaginatedEntity<Tree> paginatedEntity;
 
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
       filteredTrees = treeList;
@@ -107,14 +105,8 @@ public class TreeResource {
       }
 
     }
-
-    if (maxSize > 0 && page > 0) {
-      paginatedEntity = new PaginatedEntity<>(filteredTrees.toArray(new Tree[0]), page, maxSize);
-    } else {
-      paginatedEntity = new PaginatedEntity<>(filteredTrees.toArray(new Tree[0]));
-    }
-
-    System.out.print(1);
+    PaginatedEntity<Tree> paginatedEntity = new PaginatedEntity<>(
+        filteredTrees.toArray(new Tree[0]), maxSize, page);
     return Response.ok().entity(paginatedEntity).build();
   }
 
