@@ -10,13 +10,14 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import sh.david.bouldertreeapi.Main;
 import sh.david.bouldertreeapi.datastore.Dimensions;
 import sh.david.bouldertreeapi.datastore.Genus;
-import sh.david.bouldertreeapi.utils.ResponseEntity;
+import sh.david.bouldertreeapi.utils.PaginatedEntity;
 import sh.david.bouldertreeapi.datastore.Form;
 import sh.david.bouldertreeapi.datastore.LeafCycle;
 import sh.david.bouldertreeapi.datastore.LeafFallColor;
@@ -54,7 +55,7 @@ public class TreeResource {
   ) {
     List<Tree> treeList = new ArrayList<>(trees.values());
     List<Tree> filteredTrees = new ArrayList<>();
-    ResponseEntity<Tree> responseEntity = new ResponseEntity<>();
+    PaginatedEntity<Tree> paginatedEntity;
 
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
       filteredTrees = treeList;
@@ -108,19 +109,13 @@ public class TreeResource {
     }
 
     if (maxSize > 0 && page > 0) {
-      int filteredTreesSize = filteredTrees.size();
-      int pageIndex = Math.min((page - 1) * maxSize, filteredTreesSize);
-      int maxSizeIndex = Math.min(pageIndex + maxSize, filteredTreesSize);
-      double numberOfPage = Math.ceil((float) filteredTreesSize / maxSize);
-      responseEntity.setCurrentPage(page);
-      responseEntity.setNumberOfPage(numberOfPage);
-      filteredTrees = filteredTrees.subList(pageIndex, maxSizeIndex);
-
+      paginatedEntity = new PaginatedEntity<>(filteredTrees.toArray(new Tree[0]), page, maxSize);
+    } else {
+      paginatedEntity = new PaginatedEntity<>(filteredTrees.toArray(new Tree[0]));
     }
-    responseEntity.setPayload(filteredTrees.toArray(new Tree[0]));
 
     System.out.print(1);
-    return Response.ok().entity(responseEntity).build();
+    return Response.ok().entity(paginatedEntity).build();
   }
 
   @GET
