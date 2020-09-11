@@ -2,11 +2,12 @@ package sh.david.bouldertreeapi.utils;
 
 import java.io.StringReader;
 import javax.xml.bind.JAXB;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;
 
 public class Utils {
-  public static <T> T unmarshalJson(String string, Class<T> classToCast){
+  public static <T> T unmarshalJson(String string, Class<T> classToCast) throws JSONException {
     String xmlHeader = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
     String xmlTemplate = "%s<root>%s</root>";
     JSONObject jsonObject = new JSONObject(string);

@@ -3,6 +3,7 @@ package sh.david.bouldertreeapi.datastore;
 import java.util.Objects;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import org.json.JSONException;
 import sh.david.bouldertreeapi.utils.Utils;
 
 @XmlRootElement
@@ -38,7 +39,13 @@ public class Species {
 
   public static Species fromString(String string){
     // Todo: Add XML unmarhsalling
-    return Utils.unmarshalJson(string, Species.class);
+    try{
+      return Utils.unmarshalJson(string, Species.class);
+    } catch (JSONException e) {
+      e.printStackTrace();
+      // Todo: Return 500 instead
+      return new Species();
+    }
   }
 
 
