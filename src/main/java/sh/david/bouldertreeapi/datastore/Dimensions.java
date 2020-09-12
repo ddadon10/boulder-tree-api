@@ -1,6 +1,7 @@
 package sh.david.bouldertreeapi.datastore;
 
 import java.util.Objects;
+import javax.ws.rs.BadRequestException;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import org.json.JSONException;
@@ -56,9 +57,7 @@ public class Dimensions implements FuzzySearch<Dimensions> {
     try{
       return Utils.unmarshal(string, Dimensions.class);
     } catch (JSONException | IllegalArgumentException e) {
-      e.printStackTrace();
-      // Todo: Return 500 instead
-      return new Dimensions();
+      throw new BadRequestException("Incorrect representation for " + Dimensions.class.getName());
     }
   }
 

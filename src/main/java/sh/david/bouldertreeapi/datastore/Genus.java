@@ -1,6 +1,7 @@
 package sh.david.bouldertreeapi.datastore;
 
 import java.util.Objects;
+import javax.ws.rs.BadRequestException;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import org.json.JSONException;
@@ -33,9 +34,7 @@ public class Genus implements FuzzySearch<Genus> {
     try{
       return Utils.unmarshal(string, Genus.class);
     } catch (JSONException | IllegalArgumentException e) {
-      e.printStackTrace();
-      // Todo: Return 500 instead
-      return new Genus();
+      throw new BadRequestException("Incorrect representation for " + Genus.class.getName());
     }
   }
 
