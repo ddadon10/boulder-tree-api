@@ -9,8 +9,6 @@ import sh.david.bouldertreeapi.datastore.DataStore;
  * Main class.
  */
 public class Main {
-
-  public static final String BASE_URI = "http://localhost:8000/boulder-tree-api/";
   public static DataStore DATASTORE;
   public static ArrayList<String> SPECIAL_QUERYPARAMS = new ArrayList<>();
   public static enum orderEnum {ASC, DESC}
