@@ -15,9 +15,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import sh.david.bouldertreeapi.Main;
 import sh.david.bouldertreeapi.datastore.Genus;
-
-import sh.david.bouldertreeapi.datastore.Species;
-import sh.david.bouldertreeapi.utils.PaginatedEntity;
+import sh.david.bouldertreeapi.response.GenusResponse;
 
 @Path("/genus")
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
@@ -49,10 +47,10 @@ public class GenusResource {
       }
     }
 
-    PaginatedEntity<Genus> paginatedEntity = new PaginatedEntity<>(
+    GenusResponse genusResponse = new GenusResponse(
         filteredGenus.toArray(new Genus[0]), maxSize, page);
 
-    return Response.ok().entity(paginatedEntity).build();
+    return Response.ok().entity(genusResponse).build();
   }
 
   @GET

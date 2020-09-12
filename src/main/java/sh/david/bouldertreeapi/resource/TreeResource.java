@@ -16,7 +16,7 @@ import javax.ws.rs.core.UriInfo;
 import sh.david.bouldertreeapi.Main;
 import sh.david.bouldertreeapi.datastore.Dimensions;
 import sh.david.bouldertreeapi.datastore.Genus;
-import sh.david.bouldertreeapi.utils.PaginatedEntity;
+import sh.david.bouldertreeapi.response.TreeResponse;
 import sh.david.bouldertreeapi.datastore.Form;
 import sh.david.bouldertreeapi.datastore.LeafCycle;
 import sh.david.bouldertreeapi.datastore.LeafFallColor;
@@ -104,9 +104,9 @@ public class TreeResource {
       }
 
     }
-    PaginatedEntity<Tree> paginatedEntity = new PaginatedEntity<>(
+    TreeResponse treeResponse = new TreeResponse(
         filteredTrees.toArray(new Tree[0]), maxSize, page);
-    return Response.ok().entity(paginatedEntity).build();
+    return Response.ok().entity(treeResponse).build();
   }
 
   @GET
