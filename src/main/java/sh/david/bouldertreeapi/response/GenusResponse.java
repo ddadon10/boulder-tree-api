@@ -9,8 +9,8 @@ import sh.david.bouldertreeapi.datastore.Genus;
 public class GenusResponse extends BaseResponse<Genus> {
 
   @Override
-  @XmlElementWrapper(name="GenusList")
-  @XmlElement(name="Genus")
+  @XmlElementWrapper(name="genusList")
+  @XmlElement(name="genus")
   public Genus[] getPaginatedEntity() {
     return this.paginatedEntity;
   }

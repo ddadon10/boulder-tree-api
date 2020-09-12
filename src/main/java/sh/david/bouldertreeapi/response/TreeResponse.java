@@ -9,8 +9,8 @@ import sh.david.bouldertreeapi.datastore.Tree;
 public class TreeResponse extends BaseResponse<Tree> {
 
   @Override
-  @XmlElementWrapper(name="Trees")
-  @XmlElement(name="Tree")
+  @XmlElementWrapper(name="trees")
+  @XmlElement(name="tree")
   public Tree[] getPaginatedEntity() {
     return this.paginatedEntity;
   }

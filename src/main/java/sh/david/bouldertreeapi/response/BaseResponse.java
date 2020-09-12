@@ -11,6 +11,8 @@ public abstract class BaseResponse<T> {
   private int page = 1;
   @XmlElement
   private double numberOfPage = 1;
+  @XmlElement
+  private int numberOfElementsPerPage;
 
   public BaseResponse(){}
 
@@ -28,5 +30,6 @@ public abstract class BaseResponse<T> {
       this.numberOfPage = Math.ceil((float) payloadSize / maxSize);
       this.paginatedEntity = Arrays.copyOfRange(payload, pageIndex, maxSizeIndex);
     }
+    this.numberOfElementsPerPage = this.paginatedEntity.length;
   }
 }
