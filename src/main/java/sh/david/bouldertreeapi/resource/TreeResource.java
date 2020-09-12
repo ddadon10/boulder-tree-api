@@ -35,6 +35,7 @@ public class TreeResource {
   @Path("/")
   public Response getTrees(
       @Context() UriInfo uriInfo,
+      @QueryParam("orderBy") String orderBy,
       @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("id") List<Integer> id,
@@ -53,7 +54,7 @@ public class TreeResource {
   ) {
     List<Tree> treeList = new ArrayList<>(treesDb.values());
     List<Tree> filteredTrees = new ArrayList<>();
-
+    Tree[] payload;
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
       filteredTrees = treeList;
     } else {
@@ -104,8 +105,13 @@ public class TreeResource {
       }
 
     }
-    TreeResponse treeResponse = new TreeResponse(
-        filteredTrees.toArray(new Tree[0]), maxSize, page);
+
+    if (orderBy != null) {
+      payload = TreeResponse.convertAndOrderPayload(filteredTrees, orderBy);
+    } else {
+      payload = filteredTrees.toArray(new Tree[0]);
+    }
+    TreeResponse treeResponse = new TreeResponse(payload, maxSize, page);
     return Response.ok().entity(treeResponse).build();
   }
 

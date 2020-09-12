@@ -23,6 +23,7 @@ public class Main {
     try {
       SPECIAL_QUERYPARAMS.add("maxSize");
       SPECIAL_QUERYPARAMS.add("page");
+      SPECIAL_QUERYPARAMS.add("orderBy");
       DATASTORE = new DataStore();
     } catch (FileNotFoundException | URISyntaxException e) {
       e.printStackTrace();

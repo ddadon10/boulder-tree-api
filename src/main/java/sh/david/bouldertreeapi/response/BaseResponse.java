@@ -1,8 +1,11 @@
 package sh.david.bouldertreeapi.response;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.apache.commons.beanutils.BeanComparator;
 
 public abstract class BaseResponse<T> {
   @XmlTransient
@@ -17,6 +20,11 @@ public abstract class BaseResponse<T> {
   public BaseResponse(){}
 
   public abstract T[] getPaginatedEntity();
+
+  protected static <T> List<T> orderPayload(List<T> payload, String orderBy){
+    BeanComparator<T> beanComparator = new BeanComparator<>(orderBy);
+    return payload.stream().sorted(beanComparator.reversed()).collect(Collectors.toList());
+  }
 
   public BaseResponse(T[] payload, int maxSize, int page) {
     if (maxSize <= 0 || page <= 0) {
