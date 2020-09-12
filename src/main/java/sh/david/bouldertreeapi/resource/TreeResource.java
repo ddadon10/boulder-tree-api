@@ -36,6 +36,7 @@ public class TreeResource {
   public Response getTrees(
       @Context() UriInfo uriInfo,
       @QueryParam("orderBy") String orderBy,
+      @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
       @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("id") List<Integer> id,
@@ -53,10 +54,9 @@ public class TreeResource {
       @QueryParam("waterNeed") List<WaterNeed> waterNeed
   ) {
     List<Tree> treeList = new ArrayList<>(treesDb.values());
-    List<Tree> filteredTrees = new ArrayList<>();
-    Tree[] payload;
+    List<Tree> payload = new ArrayList<>();
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
-      filteredTrees = treeList;
+      payload = treeList;
     } else {
       for (Tree tree : treeList) {
         if (!id.isEmpty() && !id.contains(tree.getId())) {
@@ -101,15 +101,13 @@ public class TreeResource {
         if (!waterNeed.isEmpty() && !waterNeed.contains(tree.getWaterNeed())) {
           continue;
         }
-        filteredTrees.add(tree);
+        payload.add(tree);
       }
 
     }
 
     if (orderBy != null) {
-      payload = TreeResponse.convertAndOrderPayload(filteredTrees, orderBy);
-    } else {
-      payload = filteredTrees.toArray(new Tree[0]);
+      payload = TreeResponse.orderPayload(payload, orderBy, order);
     }
     TreeResponse treeResponse = new TreeResponse(payload, maxSize, page);
     return Response.ok().entity(treeResponse).build();

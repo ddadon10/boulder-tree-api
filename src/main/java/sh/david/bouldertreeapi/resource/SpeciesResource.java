@@ -28,6 +28,8 @@ public class SpeciesResource {
   @Path("/")
   public Response getSpecies(
       @Context UriInfo uriInfo,
+      @QueryParam("orderBy") String orderBy,
+      @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
       @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("code") List<String> code,
@@ -36,10 +38,10 @@ public class SpeciesResource {
   ) {
 
     List<Species> speciesList = new ArrayList<>(speciesDb.values());
-    List<Species> filteredSpecies = new ArrayList<>();
+    List<Species> payload = new ArrayList<>();
 
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
-      filteredSpecies = speciesList;
+      payload = speciesList;
     } else {
       for (Species species : speciesList) {
         if (!code.isEmpty() && !code.contains(species.getCode())) {
@@ -51,13 +53,13 @@ public class SpeciesResource {
         if (!speciesProperty.isEmpty() && !speciesProperty.contains(species.getSpecies())) {
           continue;
         }
-        filteredSpecies.add(species);
+        payload.add(species);
       }
     }
-
-    SpeciesResponse speciesResponse = new SpeciesResponse(
-        filteredSpecies.toArray(new Species[0]), maxSize, page);
-
+    if (orderBy != null) {
+      payload = SpeciesResponse.orderPayload(payload, orderBy, order);
+    }
+    SpeciesResponse speciesResponse = new SpeciesResponse(payload, maxSize, page);
     return Response.ok().entity(speciesResponse).build();
   }
 

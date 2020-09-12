@@ -27,14 +27,16 @@ public class GenusResource {
   @Path("/")
   public Response getGenus(
       @Context UriInfo uriInfo,
+      @QueryParam("orderBy") String orderBy,
+      @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
       @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("genus") List<String> genusProperty,
       @QueryParam("genusEnglish") List<String> genusEnglish) {
     List<Genus> genusList = new ArrayList<>(genusDb.values());
-    List<Genus> filteredGenus = new ArrayList<>();
+    List<Genus> payload = new ArrayList<>();
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
-      filteredGenus = genusList;
+      payload = genusList;
     } else {
       for (Genus genus : genusList) {
         if (!genusProperty.isEmpty() && !genusProperty.contains(genus.getGenus())) {
@@ -43,12 +45,14 @@ public class GenusResource {
         if (!genusEnglish.isEmpty() && !genusEnglish.contains(genus.getGenusEnglish())) {
           continue;
         }
-        filteredGenus.add(genus);
+        payload.add(genus);
       }
     }
 
-    GenusResponse genusResponse = new GenusResponse(
-        filteredGenus.toArray(new Genus[0]), maxSize, page);
+    if (orderBy != null) {
+      payload = GenusResponse.orderPayload(payload, orderBy, order);
+    }
+    GenusResponse genusResponse = new GenusResponse(payload, maxSize, page);
 
     return Response.ok().entity(genusResponse).build();
   }

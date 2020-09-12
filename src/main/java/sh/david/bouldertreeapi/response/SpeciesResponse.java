@@ -1,5 +1,6 @@
 package sh.david.bouldertreeapi.response;
 
+import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -19,8 +20,8 @@ public class SpeciesResponse extends BaseResponse<Species> {
     super();
   };
 
-  public SpeciesResponse(Species[] payload, int maxSize, int page){
-    super(payload, maxSize, page);
+  public SpeciesResponse(List<Species> payload, int maxSize, int page){
+    super(payload.toArray(new Species[0]), maxSize, page);
   }
 
 

@@ -6,8 +6,10 @@ import java.util.stream.Collectors;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
 import org.apache.commons.beanutils.BeanComparator;
+import sh.david.bouldertreeapi.Main.orderEnum;
 
 public abstract class BaseResponse<T> {
+
   @XmlTransient
   protected T[] paginatedEntity;
   @XmlElement
@@ -17,13 +19,17 @@ public abstract class BaseResponse<T> {
   @XmlElement
   private int numberOfElementsPerPage;
 
-  public BaseResponse(){}
+  public BaseResponse() {
+  }
 
   public abstract T[] getPaginatedEntity();
 
-  protected static <T> List<T> orderPayload(List<T> payload, String orderBy){
+  public static <T> List<T> orderPayload(List<T> payload, String orderBy, orderEnum order) {
     BeanComparator<T> beanComparator = new BeanComparator<>(orderBy);
-    return payload.stream().sorted(beanComparator.reversed()).collect(Collectors.toList());
+
+    return payload.stream()
+        .sorted(order == orderEnum.ASC ? beanComparator : beanComparator.reversed())
+        .collect(Collectors.toList());
   }
 
   public BaseResponse(T[] payload, int maxSize, int page) {

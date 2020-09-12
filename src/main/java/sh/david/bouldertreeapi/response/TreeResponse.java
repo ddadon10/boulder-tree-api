@@ -20,12 +20,8 @@ public class TreeResponse extends BaseResponse<Tree> {
     super();
   };
 
-  public static Tree[] convertAndOrderPayload(List<Tree> payload, String orderBy){
-    return orderPayload(payload, orderBy).toArray(new Tree[0]);
-  }
-
-  public TreeResponse(Tree[] payload, int maxSize, int page){
-    super(payload, maxSize, page);
+  public TreeResponse(List<Tree> payload, int maxSize, int page){
+    super(payload.toArray(new Tree[0]), maxSize, page);
   }
 
 
