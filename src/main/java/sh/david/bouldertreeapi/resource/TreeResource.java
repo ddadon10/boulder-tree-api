@@ -116,8 +116,9 @@ public class TreeResource {
 
   @GET
   @Path("/{id}")
-  @Operation(tags = {"Other - Get Resource by Id"})
-  public Response getTreeById(@PathParam("id") int id) {
+  @Operation(tags = {"4 - Indexed Resources"}, responses = {
+      @ApiResponse(description = "A successful query", content = @Content(schema = @Schema(implementation = Tree.class)))})
+  public Response getTreeById(@Parameter(example = "1") @PathParam("id") int id) {
     Tree tree = treesDb.get(id);
     if (tree == null) {
       return Response.status(404).build();

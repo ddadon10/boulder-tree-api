@@ -1,6 +1,11 @@
 package sh.david.bouldertreeapi.resource;
 
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
@@ -26,15 +31,20 @@ public class SpeciesResource {
 
   @GET
   @Path("/")
+  @Operation(
+      description = "Species refers to a natural group of trees in the same genus made up of similar individuals.",
+      tags = {"3 - Search and Filter among Species"},
+      responses = {
+          @ApiResponse(description = "A successful search", content = @Content(schema = @Schema(implementation = SpeciesResponse.class)))})
   public Response getSpecies(
       @Context UriInfo uriInfo,
-      @QueryParam("orderBy") String orderBy,
+      @Parameter(example = "name") @QueryParam("orderBy") String orderBy,
       @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
       @DefaultValue("20") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
-      @QueryParam("code") List<String> code,
-      @QueryParam("species") List<String> speciesProperty,
-      @QueryParam("name") List<String> name
+      @Parameter(example = "[\"ABCO\"]") @QueryParam("code") List<String> code,
+      @Parameter(example = "[\"concolor\", \"altissima\"]") @QueryParam("species") List<String> speciesProperty,
+      @Parameter(example = "[\"Incense Cedar\"]") @QueryParam("name") List<String> name
   ) {
 
     List<Species> speciesList = new ArrayList<>(speciesDb.values());
@@ -44,16 +54,19 @@ public class SpeciesResource {
       payload = speciesList;
     } else {
       for (Species species : speciesList) {
-        if (!code.isEmpty() && !code.contains(species.getCode())) {
-          continue;
+        boolean found = false;
+        if (code.contains(species.getCode())) {
+          found = true;
         }
-        if (!name.isEmpty() && !name.contains(species.getName())) {
-          continue;
+        if (name.contains(species.getName())) {
+          found = true;
         }
-        if (!speciesProperty.isEmpty() && !speciesProperty.contains(species.getSpecies())) {
-          continue;
+        if (speciesProperty.contains(species.getSpecies())) {
+          found = true;
         }
-        payload.add(species);
+        if (found) {
+          payload.add(species);
+        }
       }
     }
     if (orderBy != null) {
@@ -65,7 +78,10 @@ public class SpeciesResource {
 
   @GET
   @Path("/{code}")
-  public Response getSpeciesByCode(@PathParam("code") String code) {
+  @Operation(tags = {"4 - Indexed Resources"},
+      responses = {
+          @ApiResponse(description = "A successful query", content = @Content(schema = @Schema(implementation = Species.class)))})
+  public Response getSpeciesByCode(@Parameter(example = "ABCO") @PathParam("code") String code) {
     Species speciesByCode = speciesDb.get(code);
     if (speciesByCode == null) {
       return Response.status(404).build();

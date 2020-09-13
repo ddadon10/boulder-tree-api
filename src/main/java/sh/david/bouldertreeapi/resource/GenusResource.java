@@ -72,8 +72,9 @@ public class GenusResource {
 
   @GET
   @Path("/{name}")
-  @Operation(tags = {"Other - Get Resource by Id"})
-  public Response getGenus(@PathParam("name") String name) {
+  @Operation(tags = {"4 - Indexed Resources"}, responses = {
+      @ApiResponse(description = "A successful query", content = @Content(schema = @Schema(implementation = Genus.class)))})
+  public Response getGenus(@Parameter(example = "Cercidiphyllum") @PathParam("name") String name) {
     Genus genusByName = genusDb.get(name);
     if (genusByName == null) {
       return Response.status(404).build();
