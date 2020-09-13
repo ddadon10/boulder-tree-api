@@ -16,6 +16,8 @@ openAPI:
       ### • Order by all the properties available
       ### • Get the result in XML or JSON representation
 
+
+      ## Get the source code on [Github](https://github.com/dadon-david/boulder-tree-api)
       *This API uses the Open Data provided by the City of Boulder, Colorado.*\
       *You can find the original dataset and its resources [here](https://bouldercolorado.gov/open-data/public-tree-species/)*
     version: '1.0'
