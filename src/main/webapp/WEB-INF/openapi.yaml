@@ -1,0 +1,33 @@
+prettyPrint: true
+cacheTTL: 0
+openAPI:
+  info:
+    title: Boulder Tree Species API.
+    description: |
+      ![Boulder, Colorado](assets/boulder.jpg)
+
+      *This picture of [Boulder, Colorado](https://www.flickr.com/photos/43355249@N00/28695767093), by [Pedro Szekely](https://www.flickr.com/photos/43355249@N00/28695767093) is licensed under [CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/).*
+
+      # Get information about the different Trees in Boulder, Colorado.
+      ## With this API you can:
+      ### • Query the different Trees, Species and Genus
+      ### • Filter by more than 10 properties like Leafcycle, Water Need, Dimension, Species, Genus etc.
+      ### • Fuzzy Search on some fields of the Tree resource
+      ### • Order by all the properties available
+      ### • Get the result in XML or JSON representation
+
+
+      ## Get the source code on [Github](https://github.com/dadon-david/boulder-tree-api)
+      *This API uses the Open Data provided by the City of Boulder, Colorado.*\
+      *You can find the original dataset and its resources [here](https://bouldercolorado.gov/open-data/public-tree-species/)*
+    version: '1.0'
+    contact:
+      name: David Dadon
+      email: david@dadon.fr
+    license:
+      name: Apache 2.0
+      url: http://www.apache.org/licenses/LICENSE-2.0.html
+  servers:
+    -
+      url: /api/v1
+      description: Production Server

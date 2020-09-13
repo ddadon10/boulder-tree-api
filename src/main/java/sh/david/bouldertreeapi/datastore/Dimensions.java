@@ -57,13 +57,16 @@ public class Dimensions implements FuzzySearch<Dimensions> {
     try{
       return Utils.unmarshal(string, Dimensions.class);
     } catch (JSONException | IllegalArgumentException e) {
+      e.printStackTrace();
       throw new BadRequestException("Incorrect representation for " + Dimensions.class.getName());
     }
   }
 
   @Override
   public boolean goodEnoughEquals(Dimensions otherDimensions) {
-
+    if(otherDimensions == null){
+      return false;
+    }
     if (otherDimensions.getMinHeight() != -1 && this.getMinHeight() == otherDimensions.getMinHeight()){
       return true;
     }

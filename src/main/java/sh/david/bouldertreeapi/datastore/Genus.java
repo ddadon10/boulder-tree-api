@@ -34,12 +34,17 @@ public class Genus implements FuzzySearch<Genus> {
     try{
       return Utils.unmarshal(string, Genus.class);
     } catch (JSONException | IllegalArgumentException e) {
+      e.printStackTrace();
       throw new BadRequestException("Incorrect representation for " + Genus.class.getName());
     }
   }
 
   @Override
   public boolean goodEnoughEquals(Genus otherGenus) {
+    if(otherGenus == null){
+      return false;
+    }
+
     if (otherGenus.getGenus() != null && this.getGenus().equals(otherGenus.getGenus())){
       return true;
     }

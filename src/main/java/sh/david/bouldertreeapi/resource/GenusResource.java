@@ -1,5 +1,10 @@
 package sh.david.bouldertreeapi.resource;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
@@ -25,27 +30,35 @@ public class GenusResource {
 
   @GET
   @Path("/")
+  @Operation(
+      summary = "Genus refers to a group of tree species that have fundamental traits in common but that differ in other, lesser characteristics.",
+      tags = {"2 - Search and Filter among Genus"},
+      responses = {
+          @ApiResponse(description = "A successful search", content = @Content(schema = @Schema(implementation = GenusResponse.class)))})
   public Response getGenus(
       @Context UriInfo uriInfo,
-      @QueryParam("orderBy") String orderBy,
+      @Parameter(example = "genusEnglish") @QueryParam("orderBy") String orderBy,
       @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
-      @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
+      @DefaultValue("20") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
-      @QueryParam("genus") List<String> genusProperty,
-      @QueryParam("genusEnglish") List<String> genusEnglish) {
+      @Parameter(example = "[\"Magnolia\", \"Prunus\"]") @QueryParam("genus") List<String> genusProperty,
+      @Parameter(example = "[\"Tree-of-Heaven\"]") @QueryParam("genusEnglish") List<String> genusEnglish) {
     List<Genus> genusList = new ArrayList<>(genusDb.values());
     List<Genus> payload = new ArrayList<>();
     if (Main.SPECIAL_QUERYPARAMS.containsAll(uriInfo.getQueryParameters().keySet())) {
       payload = genusList;
     } else {
       for (Genus genus : genusList) {
-        if (!genusProperty.isEmpty() && !genusProperty.contains(genus.getGenus())) {
-          continue;
+        boolean found = false;
+        if (genusProperty.contains(genus.getGenus())) {
+          found = true;
         }
-        if (!genusEnglish.isEmpty() && !genusEnglish.contains(genus.getGenusEnglish())) {
-          continue;
+        if (genusEnglish.contains(genus.getGenusEnglish())) {
+          found = true;
         }
-        payload.add(genus);
+        if (found) {
+          payload.add(genus);
+        }
       }
     }
 
@@ -59,7 +72,9 @@ public class GenusResource {
 
   @GET
   @Path("/{name}")
-  public Response getGenus(@PathParam("name") String name) {
+  @Operation(tags = {"4 - Indexed Resources"}, responses = {
+      @ApiResponse(description = "A successful query", content = @Content(schema = @Schema(implementation = Genus.class)))})
+  public Response getGenus(@Parameter(example = "Cercidiphyllum") @PathParam("name") String name) {
     Genus genusByName = genusDb.get(name);
     if (genusByName == null) {
       return Response.status(404).build();

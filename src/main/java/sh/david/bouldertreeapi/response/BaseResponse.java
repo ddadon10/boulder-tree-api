@@ -32,13 +32,14 @@ public abstract class BaseResponse<T> {
           .sorted(order == orderEnum.ASC ? beanComparator : beanComparator.reversed())
           .collect(Collectors.toList());
     } catch (RuntimeException e){
+      e.printStackTrace();
       throw new BadRequestException("Bad Request: orderBy queryParameter not correct!");
     }
   }
 
   public BaseResponse(T[] payload, int maxSize, int page) {
-    if (maxSize <= 0 || page <= 0) {
-      this.paginatedEntity = payload;
+    if (maxSize < 1 || page < 1) {
+      throw new BadRequestException("Bad Request: maxSize or page can't be lower than 1");
     } else {
       int payloadSize = payload.length;
       int pageIndex = Math.min((page - 1) * maxSize, payloadSize);
@@ -50,4 +51,17 @@ public abstract class BaseResponse<T> {
     }
     this.numberOfElementsPerPage = this.paginatedEntity.length;
   }
+
+  public int getPage() {
+    return this.page;
+  }
+
+  public int getNumberOfElementsPerPage() {
+    return this.numberOfElementsPerPage;
+  }
+
+  public double getNumberOfPage() {
+    return numberOfPage;
+  }
+
 }
