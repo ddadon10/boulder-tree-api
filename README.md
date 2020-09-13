@@ -29,7 +29,7 @@ Here a description of the different resource of the API.
 - I used Jersey, JAXB and Swagger.
 - I wanted to be focus on the Java Logic, so I used a CSV and not a Database. Of course in general it's way better to use a DB.
 - I am very careful about dependencies, it can quickly become a nightmare to manage. I don't reinvent the wheel, but I always double check before installing a deps.
-### Technical Highlights
+### Technical highlights
 - Reflection is used to have a very lean `orderBy` - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/response/BaseResponse.java#L28)
 - I wanted to practice serialization, so you can send a JSON or XML representation in a `GET` parameter and it will be deserialized automatically. I know it's a bit edgy but I had fun. Because the whole XML/JSON serialization revolve around JAXB, the solution is pretty lean - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/utils/Utils.java#L11)
 - The Datastore heavily rely on the Stream API to load the data from the CSV - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/datastore/DataStore.java)
