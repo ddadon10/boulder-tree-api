@@ -25,10 +25,10 @@ Here a description of the different resource of the API.
 
 ## Technical part
 ### Technical choices
-- This project as an exercise, so some technical choice are a way for me to learn about a specific concept.
+- This project is an exercise, so some technical choices are a way for me to learn about a specific concept.
 - I used Jersey, JAXB and Swagger.
 - I wanted to be focus on the Java Logic, so I used a CSV and not a Database. Of course in general it's way better to use a DB.
-- I am very careful about dependencies, it can quickly become a nightmare to manage. Of course I don't reinvent the wheel, but I always double check before installing a deps.
+- I am very careful about dependencies, it can quickly become a nightmare to manage. I don't reinvent the wheel, but I always double check before installing a deps.
 ### Technical Highlights
 - Reflection is used to have a very lean `orderBy` - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/response/BaseResponse.java#L28)
 - I wanted to practice serialization, so you can send a JSON or XML representation in a `GET` parameter and it will be deserialized automatically. I know it's a bit edgy but I had fun. Because the whole XML/JSON serialization revolve around JAXB, the solution is pretty lean - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/utils/Utils.java#L11)
@@ -36,7 +36,7 @@ Here a description of the different resource of the API.
 
 ### Technical things to improve
 - I had to create a `Response` class per resource because otherwise JAXB didn't find the class for unmarshalling because of generic type erasure and `@XmlSeeAlso` polluted my payload. I think it's possible to fix that by tuning JAXB - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/response/GenusResponse.java#L14)
-- There is a lot of `if elseif` to manage the different parameter. I tried to use reflection to get them dynamically but then I lost all the type safety and the benefits of `@QueryParam`. Maybe there is a better way - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/resource/TreeResource.java)
+- There is a lot of `if elseif` to manage the different parameters. I tried to use reflection to get them dynamically but then I lost all the type safety and the benefits of `@QueryParam`. Maybe there is a better way - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/resource/TreeResource.java)
 - Unit testing
 - Many other things
 
@@ -44,5 +44,5 @@ Here a description of the different resource of the API.
 You need:
 - Java 8
 - A `3.x` servlet container. I used `tomcat 8.5`.
-  - On tomcat, you need to add the attributes `relaxedPathChars='[]|' relaxedQueryChars='[]|{}^&#x5c;&#x60;&quot;&lt;&gt;'` to the connector because some clients don't URL-encode these characters [see this](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html#Standard_Implementation:~:text=relaxedQueryChars)
+  - On tomcat, you need to add the attributes `relaxedPathChars='[]|' relaxedQueryChars='[]|{}^&#x5c;&#x60;&quot;&lt;&gt;'` to the `<Connector>` in `server.xml` because some clients don't URL-encode these characters [see this](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html#Standard_Implementation:~:text=relaxedQueryChars)
 - Just run `maven compile package` to get a `ROOT.war` and drop it into the servlet container!
