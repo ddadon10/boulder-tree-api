@@ -41,6 +41,10 @@ public class Genus implements FuzzySearch<Genus> {
 
   @Override
   public boolean goodEnoughEquals(Genus otherGenus) {
+    if(otherGenus == null){
+      return false;
+    }
+
     if (otherGenus.getGenus() != null && this.getGenus().equals(otherGenus.getGenus())){
       return true;
     }

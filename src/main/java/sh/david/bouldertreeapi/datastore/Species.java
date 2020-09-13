@@ -50,6 +50,9 @@ public class Species implements FuzzySearch<Species> {
 
   @Override
   public boolean goodEnoughEquals(Species otherSpecies){
+    if (otherSpecies == null){
+      return false;
+    }
     if (otherSpecies.getSpecies() != null && this.getSpecies().equals(otherSpecies.getSpecies())){
       return true;
     }

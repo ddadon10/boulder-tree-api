@@ -51,4 +51,17 @@ public abstract class BaseResponse<T> {
     }
     this.numberOfElementsPerPage = this.paginatedEntity.length;
   }
+
+  public int getPage() {
+    return this.page;
+  }
+
+  public int getNumberOfElementsPerPage() {
+    return this.numberOfElementsPerPage;
+  }
+
+  public double getNumberOfPage() {
+    return numberOfPage;
+  }
+
 }

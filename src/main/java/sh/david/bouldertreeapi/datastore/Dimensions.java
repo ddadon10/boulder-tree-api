@@ -64,7 +64,9 @@ public class Dimensions implements FuzzySearch<Dimensions> {
 
   @Override
   public boolean goodEnoughEquals(Dimensions otherDimensions) {
-
+    if(otherDimensions == null){
+      return false;
+    }
     if (otherDimensions.getMinHeight() != -1 && this.getMinHeight() == otherDimensions.getMinHeight()){
       return true;
     }

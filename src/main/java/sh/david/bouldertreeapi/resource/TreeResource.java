@@ -2,7 +2,9 @@ package sh.david.bouldertreeapi.resource;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.media.ExampleObject;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
@@ -38,25 +40,27 @@ public class TreeResource {
   @Path("/")
   @Operation(summary = "Search among the trees.",
       description = "A Tree represent an actual Tree in Boulder, CO. Each tree has many properties like name, species or genus.",
-      tags = {"1 - Search and Filter"})
+      tags = {"1 - Search and Filter"},
+      responses = {
+          @ApiResponse(description = "A successful search", content = @Content(schema = @Schema(implementation = TreeResponse.class)))})
   public Response getTrees(
       @Context() UriInfo uriInfo,
-      @Parameter(example = "latinName") @QueryParam("orderBy") String orderBy,
+      @Parameter(example = "dimensions.minHeight") @QueryParam("orderBy") String orderBy,
       @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
       @DefaultValue("20") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @Parameter(example = "[1,201,236]") @QueryParam("id") List<Integer> id,
       @Parameter(example = "[\"White fir\", \"Red maple\"]") @QueryParam("commonName") List<String> commonName,
       @Parameter(example = "[\"Acer saccharum\"]") @QueryParam("latinName") List<String> latinName,
-      @Parameter(description = "I know it's edgy but you can send a JSON or XML Representation of a species :p - Eg: {\"code\":\"ABCO\"}") @QueryParam("species") List<Species> species,
-      @QueryParam("genus") List<Genus> genus,
+      @Parameter(description = "I know it's edgy but you can send a JSON or XML Representation of a Species :p<br/>You can do Fuzzy search also! To get all the Maple Trees: `{\"name\":\"Maple\"}`") @QueryParam("species") List<Species> species,
+      @Parameter(description = "I know it's edgy but you can send a JSON or XML Representation of a Genus :p  <br/> Eg: `{\"genus\":\"Aesculus\"}`") @QueryParam("genus") List<Genus> genus,
       @QueryParam("leafCylce") List<LeafCycle> leafCycle,
       @QueryParam("leafType") List<LeafType> leafType,
       @QueryParam("leafFallColorList") List<LeafFallColor> leafFallColorList,
-      @QueryParam("dimensions") List<Dimensions> dimensions,
+      @Parameter(description = "I know it's edgy but you can send a JSON or XML Representation of a Dimension :p <br/> Eg: `{\"minHeight\":\"20\"}`") @QueryParam("dimensions") List<Dimensions> dimensions,
       @QueryParam("formList") List<Form> formList,
-      @QueryParam("flower") List<String> flower,
-      @QueryParam("fruit") List<String> fruit,
+      @Parameter(example = "[\"yellow clusters\", \"white, orchid-like\"]") @QueryParam("flower") List<String> flower,
+      @Parameter(example = "[\"berry\"]") @QueryParam("fruit") List<String> fruit,
       @QueryParam("waterNeed") List<WaterNeed> waterNeed
   ) {
     List<Tree> treeList = new ArrayList<>(treesDb.values());
