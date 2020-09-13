@@ -1,7 +1,7 @@
 # Boulder Tree Species API.
 ![Boulder, Colorado](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/webapp/assets/boulder.jpg?raw=true)
 
-*This picture of [Boulder, Colorado](https://www.flickr.com/photos/43355249@N00/28695767093), by [Pedro Szekely](https://www.flickr.com/photos/43355249@N00/28695767093) is licensed under [CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/).*
+*This picture of [Boulder, Colorado](https://www.flickr.com/photos/43355249@N00/28695767093), by [Pedro Szekely](https://www.flickr.com/photos/pedrosz/) is licensed under [CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/).*
 
 # Get information about the Trees in Boulder, Colorado.
 ## The project is live! Visit [http://boulder.david.sh/](http://boulder.david.sh/) to use it!
@@ -44,5 +44,5 @@ Here a description of the different resource of the API.
 You need:
 - Java 8
 - A `3.x` servlet container. I used `tomcat 8.5`.
-  - On tomcat, you need to add the attributes `relaxedPathChars='[]|' relaxedQueryChars='[]|{}^&#x5c;&#x60;&quot;&lt;&gt;'` to the `<Connector>` in `server.xml` because some clients don't URL-encode these characters. For more info [see this](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html#Standard_Implementation:~:text=relaxedQueryChars) [and this](https://stackoverflow.com/a/50377112)
+  - On tomcat, you need to add the attributes `relaxedPathChars='[]|' relaxedQueryChars='[]|{}^&#x5c;&#x60;&quot;&lt;&gt;'` to the `<Connector>` in `server.xml` because some clients don't URL-encode these characters. For more info see [this](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html#Standard_Implementation:~:text=relaxedQueryChars) and [this](https://stackoverflow.com/a/50377112)
 - To deploy just run `maven compile package` to get a `ROOT.war` and drop it into the servlet container!
