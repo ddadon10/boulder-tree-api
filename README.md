@@ -40,8 +40,8 @@ Here a description of the different resource of the API.
 - Unit testing
 - Many other things
 
-### Deployment
-You need:
+## Deployment
+In order to deploy the project you need:
 - Java 8
 - A `3.x` servlet container. I used `tomcat 8.5`.
   - On tomcat, you need to add the attributes `relaxedPathChars='[]|' relaxedQueryChars='[]|{}^&#x5c;&#x60;&quot;&lt;&gt;'` to the `<Connector>` in `server.xml` because some clients don't URL-encode these characters. For more info see [this](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html#Standard_Implementation:~:text=relaxedQueryChars) and [this](https://stackoverflow.com/a/50377112)
