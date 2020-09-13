@@ -34,7 +34,7 @@ Here a description of the different resource of the API.
 - I wanted to practice serialization, so you can send a JSON or XML representation in a `GET` parameter and it will be deserialized automatically. I know it's a bit edgy but I had fun. Because the whole XML/JSON serialization revolve around JAXB, the solution is pretty lean - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/utils/Utils.java#L11)
 - The Datastore heavily rely on the Stream API to load the data from the CSV - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/datastore/DataStore.java)
 
-## Technical things to improve
+### Technical things to improve
 - I had to create a `Response` class per resource because otherwise JAXB didn't find the class for unmarshalling because of generic type erasure and `@XmlSeeAlso` polluted my payload. I think it's possible to fix that by tuning JAXB - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/response/GenusResponse.java#L14)
 - There is a lot of `if elseif` to manage the different parameter. I tried to use reflection to get them dynamically but then I lost all the type safety and the benefits of `@QueryParam`. Maybe there is a better way - [See source code here](https://github.com/dadon-david/boulder-tree-api/blob/master/src/main/java/sh/david/bouldertreeapi/resource/TreeResource.java)
 - Unit testing
