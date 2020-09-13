@@ -57,7 +57,7 @@ public class TreeResource {
       @QueryParam("leafCylce") List<LeafCycle> leafCycle,
       @QueryParam("leafType") List<LeafType> leafType,
       @QueryParam("leafFallColorList") List<LeafFallColor> leafFallColorList,
-      @Parameter(description = "I know it's edgy but you can send a JSON or XML Representation of a Dimension :p <br/> Eg: `{\"minHeight\":\"20\"}`") @QueryParam("dimensions") List<Dimensions> dimensions,
+      @Parameter(description = "I know it's edgy but you can send a JSON or XML Representation of a Dimension :p <br/> Eg: `{\"minHeight\":20}`") @QueryParam("dimensions") List<Dimensions> dimensions,
       @QueryParam("formList") List<Form> formList,
       @Parameter(example = "[\"yellow clusters\", \"white, orchid-like\"]") @QueryParam("flower") List<String> flower,
       @Parameter(example = "[\"berry\"]") @QueryParam("fruit") List<String> fruit,
