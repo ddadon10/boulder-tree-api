@@ -32,7 +32,7 @@ public class SpeciesResource {
   @GET
   @Path("/")
   @Operation(
-      description = "Species refers to a natural group of trees in the same genus made up of similar individuals.",
+      summary = "Species refers to a natural group of trees in the same genus made up of similar individuals.",
       tags = {"3 - Search and Filter among Species"},
       responses = {
           @ApiResponse(description = "A successful search", content = @Content(schema = @Schema(implementation = SpeciesResponse.class)))})

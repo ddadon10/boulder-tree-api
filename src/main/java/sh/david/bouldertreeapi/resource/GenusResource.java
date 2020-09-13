@@ -31,7 +31,7 @@ public class GenusResource {
   @GET
   @Path("/")
   @Operation(
-      description = "Genus refers to a group of tree species that have fundamental traits in common but that differ in other, lesser characteristics.",
+      summary = "Genus refers to a group of tree species that have fundamental traits in common but that differ in other, lesser characteristics.",
       tags = {"2 - Search and Filter among Genus"},
       responses = {
           @ApiResponse(description = "A successful search", content = @Content(schema = @Schema(implementation = GenusResponse.class)))})

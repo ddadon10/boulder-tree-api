@@ -39,7 +39,7 @@ public class TreeResource {
   @GET
   @Path("/")
   @Operation(
-      description = "A Tree represent an actual Tree in Boulder, CO. Each tree has many properties like name, species or genus.",
+      summary = "A Tree represent an actual Tree in Boulder, CO. Each tree has many properties like name, species or genus.",
       tags = {"1 - Search and Filter among Trees"},
       responses = {
           @ApiResponse(description = "A successful search", content = @Content(schema = @Schema(implementation = TreeResponse.class)))})
