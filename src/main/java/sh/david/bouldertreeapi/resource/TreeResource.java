@@ -38,9 +38,9 @@ public class TreeResource {
 
   @GET
   @Path("/")
-  @Operation(summary = "Search among the trees.",
+  @Operation(
       description = "A Tree represent an actual Tree in Boulder, CO. Each tree has many properties like name, species or genus.",
-      tags = {"1 - Search and Filter"},
+      tags = {"1 - Search and Filter among Trees"},
       responses = {
           @ApiResponse(description = "A successful search", content = @Content(schema = @Schema(implementation = TreeResponse.class)))})
   public Response getTrees(
@@ -116,6 +116,7 @@ public class TreeResource {
 
   @GET
   @Path("/{id}")
+  @Operation(tags = {"Other - Get Resource by Id"})
   public Response getTreeById(@PathParam("id") int id) {
     Tree tree = treesDb.get(id);
     if (tree == null) {
