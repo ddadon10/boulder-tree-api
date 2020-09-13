@@ -44,5 +44,5 @@ Here a description of the different resource of the API.
 You need:
 - Java 8
 - A `3.x` servlet container. I used `tomcat 8.5`.
-  - On tomcat, you need to add the attributes `relaxedPathChars='[]|' relaxedQueryChars='[]|{}^&#x5c;&#x60;&quot;&lt;&gt;'` to the `<Connector>` in `server.xml` because some clients don't URL-encode these characters [see this](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html#Standard_Implementation:~:text=relaxedQueryChars)
-- Just run `maven compile package` to get a `ROOT.war` and drop it into the servlet container!
+  - On tomcat, you need to add the attributes `relaxedPathChars='[]|' relaxedQueryChars='[]|{}^&#x5c;&#x60;&quot;&lt;&gt;'` to the `<Connector>` in `server.xml` because some clients don't URL-encode these characters. For more info [see this](https://tomcat.apache.org/tomcat-9.0-doc/config/http.html#Standard_Implementation:~:text=relaxedQueryChars) [and this](https://stackoverflow.com/a/50377112)
+- To deploy just run `maven compile package` to get a `ROOT.war` and drop it into the servlet container!
