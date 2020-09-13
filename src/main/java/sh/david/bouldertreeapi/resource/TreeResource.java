@@ -1,5 +1,8 @@
 package sh.david.bouldertreeapi.resource;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.ExampleObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
@@ -33,16 +36,19 @@ public class TreeResource {
 
   @GET
   @Path("/")
+  @Operation(summary = "Search among the trees.",
+      description = "A Tree represent an actual Tree in Boulder, CO. Each tree has many properties like name, species or genus.",
+      tags = {"1 - Search and Filter"})
   public Response getTrees(
       @Context() UriInfo uriInfo,
-      @QueryParam("orderBy") String orderBy,
+      @Parameter(example = "latinName") @QueryParam("orderBy") String orderBy,
       @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
       @DefaultValue("20") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
-      @QueryParam("id") List<Integer> id,
-      @QueryParam("commonName") List<String> commonName,
-      @QueryParam("latinName") List<String> latinName,
-      @QueryParam("species") List<Species> species,
+      @Parameter(example = "[1,201,236]") @QueryParam("id") List<Integer> id,
+      @Parameter(example = "[\"White fir\", \"Red maple\"]") @QueryParam("commonName") List<String> commonName,
+      @Parameter(example = "[\"Acer saccharum\"]") @QueryParam("latinName") List<String> latinName,
+      @Parameter(description = "I know it's edgy but you can send a JSON or XML Representation of a species :p - Eg: {\"code\":\"ABCO\"}") @QueryParam("species") List<Species> species,
       @QueryParam("genus") List<Genus> genus,
       @QueryParam("leafCylce") List<LeafCycle> leafCycle,
       @QueryParam("leafType") List<LeafType> leafType,
@@ -59,49 +65,40 @@ public class TreeResource {
       payload = treeList;
     } else {
       for (Tree tree : treeList) {
-        if (!id.isEmpty() && !id.contains(tree.getId())) {
-          continue;
+        boolean found = false;
+        if (id.contains(tree.getId())) {
+          found = true;
+        } else if (commonName.contains(tree.getCommonName())) {
+          found = true;
+        } else if (latinName.contains(tree.getLatinName())) {
+          found = true;
+        } else if (species.stream().anyMatch(tree.getSpecies()::goodEnoughEquals)) {
+          found = true;
+        } else if (genus.stream().anyMatch(tree.getGenus()::goodEnoughEquals)) {
+          found = true;
+        } else if (leafCycle.contains(tree.getLeafCycle())) {
+          found = true;
+        } else if (leafType.contains(tree.getLeafType())) {
+          found = true;
+        } else if (leafFallColorList.stream()
+            .anyMatch(el -> tree.getLeafFallColorList().contains(el))) {
+          found = true;
+        } else if (dimensions.stream()
+            .anyMatch(tree.getDimensions()::goodEnoughEquals)) {
+          found = true;
+        } else if (formList.stream()
+            .anyMatch(el -> tree.getFormList().contains(el))) {
+          found = true;
+        } else if (flower.contains(tree.getFlower())) {
+          found = true;
+        } else if (fruit.contains(tree.getFruit())) {
+          found = true;
+        } else if (waterNeed.contains(tree.getWaterNeed())) {
+          found = true;
         }
-        if (!commonName.isEmpty() && !commonName.contains(tree.getCommonName())) {
-          continue;
+        if (found) {
+          payload.add(tree);
         }
-        if (!latinName.isEmpty() && !latinName.contains(tree.getLatinName())) {
-          continue;
-        }
-        if (!species.isEmpty() && species.stream().noneMatch(tree.getSpecies()::goodEnoughEquals)) {
-          continue;
-        }
-        if (!genus.isEmpty() && genus.stream().noneMatch(tree.getGenus()::goodEnoughEquals)) {
-          continue;
-        }
-        if (!leafCycle.isEmpty() && !leafCycle.contains(tree.getLeafCycle())) {
-          continue;
-        }
-        if (!leafType.isEmpty() && !leafType.contains(tree.getLeafType())) {
-          continue;
-        }
-        if (!leafFallColorList.isEmpty() && leafFallColorList.stream()
-            .noneMatch(el -> tree.getLeafFallColorList().contains(el))) {
-          continue;
-        }
-        if (!dimensions.isEmpty() && dimensions.stream()
-            .noneMatch(tree.getDimensions()::goodEnoughEquals)) {
-          continue;
-        }
-        if (!formList.isEmpty() && formList.stream()
-            .noneMatch(el -> tree.getFormList().contains(el))) {
-          continue;
-        }
-        if (!flower.isEmpty() && !flower.contains(tree.getFlower())) {
-          continue;
-        }
-        if (!fruit.isEmpty() && !fruit.contains(tree.getFruit())) {
-          continue;
-        }
-        if (!waterNeed.isEmpty() && !waterNeed.contains(tree.getWaterNeed())) {
-          continue;
-        }
-        payload.add(tree);
       }
 
     }
