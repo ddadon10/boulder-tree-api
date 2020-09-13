@@ -57,6 +57,7 @@ public class Dimensions implements FuzzySearch<Dimensions> {
     try{
       return Utils.unmarshal(string, Dimensions.class);
     } catch (JSONException | IllegalArgumentException e) {
+      e.printStackTrace();
       throw new BadRequestException("Incorrect representation for " + Dimensions.class.getName());
     }
   }

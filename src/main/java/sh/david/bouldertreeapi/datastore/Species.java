@@ -43,6 +43,7 @@ public class Species implements FuzzySearch<Species> {
     try{
       return Utils.unmarshal(string, Species.class);
     } catch (JSONException | IllegalArgumentException e) {
+      e.printStackTrace();
       throw new BadRequestException("Incorrect representation for " + Species.class.getName());
     }
   }

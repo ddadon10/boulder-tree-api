@@ -32,6 +32,7 @@ public abstract class BaseResponse<T> {
           .sorted(order == orderEnum.ASC ? beanComparator : beanComparator.reversed())
           .collect(Collectors.toList());
     } catch (RuntimeException e){
+      e.printStackTrace();
       throw new BadRequestException("Bad Request: orderBy queryParameter not correct!");
     }
   }
