@@ -37,7 +37,7 @@ public class TreeResource {
       @Context() UriInfo uriInfo,
       @QueryParam("orderBy") String orderBy,
       @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
-      @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
+      @DefaultValue("20") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("id") List<Integer> id,
       @QueryParam("commonName") List<String> commonName,

@@ -29,7 +29,7 @@ public class GenusResource {
       @Context UriInfo uriInfo,
       @QueryParam("orderBy") String orderBy,
       @DefaultValue("ASC") @QueryParam("order") Main.orderEnum order,
-      @DefaultValue("-1") @QueryParam("maxSize") int maxSize,
+      @DefaultValue("20") @QueryParam("maxSize") int maxSize,
       @DefaultValue("1") @QueryParam("page") int page,
       @QueryParam("genus") List<String> genusProperty,
       @QueryParam("genusEnglish") List<String> genusEnglish) {

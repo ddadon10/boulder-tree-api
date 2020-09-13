@@ -38,8 +38,8 @@ public abstract class BaseResponse<T> {
   }
 
   public BaseResponse(T[] payload, int maxSize, int page) {
-    if (maxSize <= 0 || page <= 0) {
-      this.paginatedEntity = payload;
+    if (maxSize < 1 || page < 1) {
+      throw new BadRequestException("Bad Request: maxSize or page can't be lower than 1");
     } else {
       int payloadSize = payload.length;
       int pageIndex = Math.min((page - 1) * maxSize, payloadSize);
