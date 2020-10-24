@@ -4,7 +4,6 @@
 *This picture of [Boulder, Colorado](https://www.flickr.com/photos/43355249@N00/28695767093), by [Pedro Szekely](https://www.flickr.com/photos/pedrosz/) is licensed under [CC BY 2.0](https://creativecommons.org/licenses/by-sa/2.0/).*
 
 # Get information about the Trees in Boulder, Colorado.
-## The project is live! Visit [http://boulder.david.sh/](http://boulder.david.sh/) to use it!
 ## With this API you can:
 #### • Query the different Trees, Species and Genus
 #### • Filter by more than 10 properties like Leafcycle, Water Need, Dimension, Species, Genus etc.
